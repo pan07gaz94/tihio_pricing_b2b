@@ -14,10 +14,14 @@
 </head>
 
 <body>
-<?php
-include('data.php');
-for ($i=0; $i < 3 ; $i++) {
-    echo "
+	<?php
+	include('data.php');
+
+
+
+	$length = count($data);
+	for ($i = 0; $i < $length; $i++) {
+		echo "
 	<div class='widget-container list-item-1-container'>
 		<img class='preview-img list-item-1-img' src='" . $data['rigani-xyma']['en']['img'] . "' alt=''>
 		<div class='widget-header list-item-1-header'>header</div>
@@ -32,9 +36,8 @@ for ($i=0; $i < 3 ; $i++) {
 		</div>
 		<div class='widget-footer list-item-1-footer'>a</div>
 	</div>";
+	} ?>
 
-
-	}?>
 
 </body>
 
