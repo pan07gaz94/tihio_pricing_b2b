@@ -23,13 +23,13 @@
 	for ($i = 0; $i < $length; $i++) {
 		echo "
 	<div class='widget-container list-item-1-container'>
-		<img class='preview-img list-item-1-img' src='" . $data['rigani-xyma']['en']['img'] . "' alt=''>
+		<img class='preview-img list-item-1-img' src='" . $data[$i]['en']['img'] . "' alt=''>
 		<div class='widget-body-parent list-item-1-body'>
 			<div class='widget-header list-item-1-header'>
-				<div class='title'>titlos mas</div>
-				<div class='price-list list-item-1-price'>15€</div>
+				<div class='title'>" . $data[$i]['en']['title'] . "</div>
+				<div class='price-list list-item-1-price'>" . $data[$i]['en']['price'] . "€</div>
 			</div>
-			<div class='widget-body-tetxt list-item-1-body'>keimeno mas</div>
+			<div class='widget-body-tetxt list-item-1-body'>". $data[$i]['en']['keimeno'] . "</div>
 		</div>
 
 	</div>";
