@@ -21,7 +21,6 @@ body {
     width: 536px;
     height: 150px;
     background-color: #ffffff;
-    border: 2px solid red;
     display: flex;
     position: relative;
     flex-direction: row;
@@ -51,7 +50,6 @@ body {
       width: 100%; }
     .nonos .widget-container .preview-img {
       height: 100%;
-      border: 2px solid red;
       width: 20%;
       object-fit: contain; }
     .nonos .widget-container .widget-header {
@@ -66,12 +64,10 @@ body {
       align-content: center;
       flex-direction: row;
       justify-content: space-between;
-      border: 2px solid red;
       margin-top: 3%; }
     .nonos .widget-container .widget-body {
       width: 100%; }
     .nonos .widget-container .widget-footer {
-      border: 2px solid red;
       width: 100%;
       display: flex;
       flex-direction: row;

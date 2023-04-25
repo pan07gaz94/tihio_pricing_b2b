@@ -27,7 +27,7 @@ body {
         width: 536px;
         height: 150px;
         background-color: #ffffff;
-        border: 2px solid red;
+        
         display: flex;
         position: relative;
         flex-direction: row;
@@ -36,6 +36,7 @@ body {
         justify-content: flex-start;
         align-items: center;
         margin: 1%;
+        
 
         &.FALSE{
             background-color: grey;
@@ -68,7 +69,7 @@ body {
 
         .preview-img {
             height: 100%;
-            border: 2px solid $red;
+            
             width: 20%;
             object-fit: contain;
 
@@ -86,7 +87,7 @@ body {
             align-content: center;
             flex-direction: row;
             justify-content: space-between;
-            border: 2px solid $red;
+            
             margin-top: 3%;
 
         }
@@ -96,7 +97,7 @@ body {
         }
 
         .widget-footer {
-            border: 2px solid $red;
+            
             width: 100%;
             display: flex;
             flex-direction: row;
