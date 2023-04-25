@@ -1,23 +1,65 @@
+/* line 3, style.scss */
 body {
   width: 100%;
-  height: 100vh;
-  border-color: red; }
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../images/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  overflow: auto; }
 
+/* line 20, style.scss */
+.header,
+.footer {
+  background-color: #ffffff;
+  display: flex;
+  width: 536px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  position: relative;
+  align-content: space-around; }
+  /* line 23, style.scss */
+  .header .logo,
+  .header .title,
+  .header .text1,
+  .header .text2,
+  .footer .logo,
+  .footer .title,
+  .footer .text1,
+  .footer .text2 {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center; }
+
+/* line 48, style.scss */
 .nonos {
-  background-color: #0d471f;
   display: flex;
   position: relative;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   align-content: flex-start;
-  border: 2px solid;
   flex-direction: column;
-  padding: 20px;
+  margin: 20px;
   width: fit-content;
   margin: auto;
   border-radius: 20px; }
+  /* line 63, style.scss */
   .nonos .widget-container {
+    border-radius: 10px;
     width: 536px;
     height: 150px;
     background-color: #ffffff;
@@ -29,8 +71,12 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin: 1%; }
-    .nonos .widget-container.FALSE {
-      background-color: grey; }
+    /* line 77, style.scss */
+    .nonos .widget-container.disable {
+      filter: grayscale(1);
+      background-color: #d3d3d394;
+      border-radius: 10px; }
+    /* line 84, style.scss */
     .nonos .widget-container .widget-body-parent {
       position: relative;
       height: 100%;
@@ -39,23 +85,40 @@ body {
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: flex-start;
-      padding: 5%; }
+      margin: 5%; }
+      /* line 94, style.scss */
+      .disable .nonos .widget-container .widget-body-parent {
+        filter: grayscale(1); }
+      /* line 98, style.scss */
       .nonos .widget-container .widget-body-parent .widget-body-tetxt {
         font-family: 'Urbanist', sans-serif;
         font-size: 14px;
         letter-spacing: 1px;
-        margin-top: 3%; }
+        margin-top: 3%;
+        line-height: 1.4; }
+        /* line 105, style.scss */
+        .disable .nonos .widget-container .widget-body-parent .widget-body-tetxt {
+          filter: grayscale(1); }
+    /* line 111, style.scss */
     .nonos .widget-container .body-container {
       display: flex;
       width: 100%; }
+      /* line 115, style.scss */
+      .disable .nonos .widget-container .body-container {
+        filter: grayscale(1); }
+    /* line 120, style.scss */
     .nonos .widget-container .preview-img {
       height: 100%;
       width: 20%;
       object-fit: contain; }
+      /* line 125, style.scss */
+      .disable .nonos .widget-container .preview-img {
+        filter: grayscale(1); }
+    /* line 131, style.scss */
     .nonos .widget-container .widget-header {
       text-transform: capitalize;
       font-size: 21px;
-      font-weight: bold;
+      font-weight: 400;
       font-family: 'Urbanist', sans-serif;
       width: 100%;
       display: flex;
@@ -64,16 +127,19 @@ body {
       align-content: center;
       flex-direction: row;
       justify-content: space-between;
-      margin-top: 3%; }
+      margin-top: 4%;
+      letter-spacing: 0px; }
+      /* line 146, style.scss */
+      .disable .nonos .widget-container .widget-header {
+        filter: grayscale(1); }
+      /* line 151, style.scss */
+      .nonos .widget-container .widget-header .price-list {
+        font-weight: 500; }
+    /* line 156, style.scss */
     .nonos .widget-container .widget-body {
       width: 100%; }
-    .nonos .widget-container .widget-footer {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-content: center;
-      justify-content: center;
-      align-items: center; }
+      /* line 159, style.scss */
+      .disable .nonos .widget-container .widget-body {
+        filter: grayscale(1); }
 
 /*# sourceMappingURL=style.css.map */
