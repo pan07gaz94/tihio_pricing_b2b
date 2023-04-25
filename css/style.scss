@@ -8,9 +8,11 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    align-content: flex-start;
     border: 2px solid;
+    flex-direction: column;
     border-color: $red;
+ 
 }
 
 .no-bullets {
