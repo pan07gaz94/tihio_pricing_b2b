@@ -37,6 +37,10 @@ body {
         align-items: center;
         margin: 1%;
 
+        &.FALSE{
+            background-color: grey;
+        }
+
 
         .widget-body-parent {
             position: relative;

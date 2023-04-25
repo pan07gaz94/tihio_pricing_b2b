@@ -30,6 +30,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin: 1%; }
+    .nonos .widget-container.FALSE {
+      background-color: grey; }
     .nonos .widget-container .widget-body-parent {
       position: relative;
       height: 100%;

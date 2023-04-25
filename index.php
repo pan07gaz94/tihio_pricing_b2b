@@ -25,8 +25,11 @@
 	$length = count($data);
 	echo "<div class='nonos'>";
 	for ($i = 0; $i < $length; $i++) {
+		
+	
+
 		echo "
-	<div class='widget-container list-item-1-container'>
+	<div class='widget-container ".$data[$i]['en']['availability']." list-item-1-container'>
 		<img class='preview-img list-item-1-img' src='" . $data[$i]['en']['img'] . "' alt=''>
 		<div class='widget-body-parent list-item-1-body'>
 			<div class='widget-header list-item-1-header'>
