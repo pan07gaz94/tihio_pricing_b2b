@@ -3,6 +3,13 @@
 body {
     width: 100%;
     height: 100vh;
+   
+    border-color: $red;
+    
+
+}
+.nonos {
+    background-color: #0d471f;
     display: flex;
     position: relative;
     flex-wrap: nowrap;
@@ -11,11 +18,11 @@ body {
     align-content: flex-start;
     border: 2px solid;
     flex-direction: column;
-    border-color: $red;
-    background-color: #0d471f;
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 20px;
 
-}
-.nonons {
     .widget-container {
         width: 536px;
         height: 150px;
