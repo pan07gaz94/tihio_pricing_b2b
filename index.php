@@ -24,18 +24,16 @@
 		echo "
 	<div class='widget-container list-item-1-container'>
 		<img class='preview-img list-item-1-img' src='" . $data['rigani-xyma']['en']['img'] . "' alt=''>
-		<div class='widget-header list-item-1-header'>header</div>
-		<div class='widget-body list-item-1-body'>
-			<div class='price-list list-item-1-price'>
-				<ul class='list list-item-1-list'>
-					<li class='list-items list-item-1 no-bullets'>1</li>
-					<li class='list-items list-item-2 no-bullets'>2</li>
-					<li class='list-items list-item-3 no-bullets'>3</li>
-				</ul>
+		<div class='widget-body-parent list-item-1-body'>
+			<div class='widget-header list-item-1-header'>
+				<div class='title'>titlos mas</div>
+				<div class='price-list list-item-1-price'>15€</div>
 			</div>
+			<div class='widget-body-tetxt list-item-1-body'>keimeno mas</div>
 		</div>
-		<div class='widget-footer list-item-1-footer'>a</div>
+
 	</div>";
+
 	} ?>
 
 
