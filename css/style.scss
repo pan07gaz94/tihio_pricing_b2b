@@ -14,17 +14,18 @@ body {
     // background-position: center;
     // background-repeat: no-repeat;
     // background-size: auto;
-    overflow:auto
+    overflow: auto
 }
 
 .header,
 .footer {
-background-color: #ffffff;
+    background-color: #ffffff;
+
     .logo,
-    .title,
+    .titlemain,
     .text1,
     .text2 {
-        width: 50%;
+        width: 75%;
         height: fit-content;
         display: flex;
         flex-direction: column;
@@ -44,6 +45,20 @@ background-color: #ffffff;
     align-content: space-around;
 }
 
+.header {
+    margin-top: 1%;
+
+    .titlemain {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Urbanist';
+        background-color: black;
+        color: white;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+    }
+}
 
 .nonos {
     // background-color: #0d471f;
@@ -79,6 +94,9 @@ background-color: #ffffff;
             filter: grayscale(1);
             background-color: #d3d3d394;
             border-radius: 10px;
+
+
+
         }
 
 
@@ -125,13 +143,15 @@ background-color: #ffffff;
             cursor: pointer;
             transition: 0.3s;
             opacity: 0.8;
-            &:hover{
+
+            &:hover {
                 opacity: 1;
                 scale: 1.5;
             }
 
             .disable & {
                 filter: grayscale(1);
+
             }
 
         }
@@ -156,7 +176,7 @@ background-color: #ffffff;
 
             }
 
-            .price-list{
+            .price-list {
                 font-weight: 500;
             }
         }
