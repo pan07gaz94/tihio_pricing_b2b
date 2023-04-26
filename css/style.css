@@ -22,16 +22,16 @@ body {
   flex-direction: column;
   position: relative;
   align-content: space-around; }
-  /* line 23, style.scss */
+  /* line 24, style.scss */
   .header .logo,
-  .header .title,
+  .header .titlemain,
   .header .text1,
   .header .text2,
   .footer .logo,
-  .footer .title,
+  .footer .titlemain,
   .footer .text1,
   .footer .text2 {
-    width: 50%;
+    width: 75%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -41,6 +41,20 @@ body {
     align-items: center; }
 
 /* line 48, style.scss */
+.header {
+  margin-top: 1%; }
+  /* line 51, style.scss */
+  .header .titlemain {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Urbanist';
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0px; }
+
+/* line 63, style.scss */
 .nonos {
   display: flex;
   position: relative;
@@ -53,7 +67,7 @@ body {
   width: fit-content;
   margin: auto;
   border-radius: 20px; }
-  /* line 63, style.scss */
+  /* line 78, style.scss */
   .nonos .widget-container {
     border-top: 1px solid #dfdfdf;
     border-radius: 10px;
@@ -68,12 +82,12 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin: 1%; }
-    /* line 78, style.scss */
+    /* line 93, style.scss */
     .nonos .widget-container.disable {
       filter: grayscale(1);
       background-color: #d3d3d394;
       border-radius: 10px; }
-    /* line 85, style.scss */
+    /* line 103, style.scss */
     .nonos .widget-container .widget-body-parent {
       position: relative;
       height: 100%;
@@ -83,27 +97,27 @@ body {
       flex-wrap: nowrap;
       justify-content: flex-start;
       margin: 5%; }
-      /* line 95, style.scss */
+      /* line 113, style.scss */
       .disable .nonos .widget-container .widget-body-parent {
         filter: grayscale(1); }
-      /* line 99, style.scss */
+      /* line 117, style.scss */
       .nonos .widget-container .widget-body-parent .widget-body-tetxt {
         font-family: 'Urbanist', sans-serif;
         font-size: 14px;
         letter-spacing: 1px;
         margin-top: 3%;
         line-height: 1.4; }
-        /* line 106, style.scss */
+        /* line 124, style.scss */
         .disable .nonos .widget-container .widget-body-parent .widget-body-tetxt {
           filter: grayscale(1); }
-    /* line 112, style.scss */
+    /* line 130, style.scss */
     .nonos .widget-container .body-container {
       display: flex;
       width: 100%; }
-      /* line 116, style.scss */
+      /* line 134, style.scss */
       .disable .nonos .widget-container .body-container {
         filter: grayscale(1); }
-    /* line 121, style.scss */
+    /* line 139, style.scss */
     .nonos .widget-container .preview-img {
       height: 100%;
       width: 20%;
@@ -111,14 +125,14 @@ body {
       cursor: pointer;
       transition: 0.3s;
       opacity: 0.8; }
-      /* line 128, style.scss */
+      /* line 147, style.scss */
       .nonos .widget-container .preview-img:hover {
         opacity: 1;
         scale: 1.5; }
-      /* line 133, style.scss */
+      /* line 152, style.scss */
       .disable .nonos .widget-container .preview-img {
         filter: grayscale(1); }
-    /* line 139, style.scss */
+    /* line 159, style.scss */
     .nonos .widget-container .widget-header {
       text-transform: capitalize;
       font-size: 21px;
@@ -133,16 +147,16 @@ body {
       justify-content: space-between;
       margin-top: 4%;
       letter-spacing: 0px; }
-      /* line 154, style.scss */
+      /* line 174, style.scss */
       .disable .nonos .widget-container .widget-header {
         filter: grayscale(1); }
-      /* line 159, style.scss */
+      /* line 179, style.scss */
       .nonos .widget-container .widget-header .price-list {
         font-weight: 500; }
-    /* line 164, style.scss */
+    /* line 184, style.scss */
     .nonos .widget-container .widget-body {
       width: 100%; }
-      /* line 167, style.scss */
+      /* line 187, style.scss */
       .disable .nonos .widget-container .widget-body {
         filter: grayscale(1); }
 

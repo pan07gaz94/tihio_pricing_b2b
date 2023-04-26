@@ -18,8 +18,8 @@
 
 <body>
 	<div class="header">
-		<img class="logo">logo</img>
-		<div class="title">B2B Pricelist</div>
+		<img class="logo" src="./images/logo.png"></img>
+		<div class="titlemain">B2B Pricelist</div>
 	</div>
 	<?php
 	include('data.php');
@@ -27,14 +27,14 @@
 	echo "<div class='nonos'>";
 	for ($i = 0; $i < $length; $i++) {
 		echo "
-	<div class='widget-container " . $data[$i]['en']['availability'] . " list-item-1-container'>
-		<img class='preview-img list-item-1-img' src='./images/" . $data[$i]['en']['img'] . "' alt=''>
-		<div class='widget-body-parent list-item-1-body'>
-			<div class='widget-header list-item-1-header'>
+	<div class='widget-container  " . $data[$i]['en']['availability'] . " list-item-". $i."-container'>
+		<img class='preview-img list-item-". $i."-img' src='./images/" . $data[$i]['en']['img'] . "' alt=''>
+		<div class='widget-body-parent list-item-". $i."-body'>
+			<div class='widget-header list-item-". $i."-header'>
 				<div class='title'>" . $data[$i]['en']['title'] . "</div>
-				<div class='price-list list-item-1-price'>" . $data[$i]['en']['price'] . "€</div>
+				<div class='price-list list-item-". $i."-price'>" . $data[$i]['en']['price'] . "€</div>
 			</div>
-			<div class='widget-body-tetxt list-item-1-body'>" . $data[$i]['en']['keimeno'] . "</div>
+			<div class='widget-body-tetxt list-item-". $i."-body'>" . $data[$i]['en']['keimeno'] . "</div>
 		</div>
 	</div>";
 	}
