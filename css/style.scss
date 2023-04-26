@@ -10,10 +10,10 @@ body {
     align-content: center;
     justify-content: space-between;
     align-items: center;
-    background-image: url('../images/bg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+    // background-image: url('../images/bg.png');
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: auto;
     overflow:auto
 }
 
@@ -61,6 +61,7 @@ background-color: #ffffff;
     border-radius: 20px;
 
     .widget-container {
+        border-top: 1px solid #dfdfdf;
         border-radius: 10px;
         width: 536px;
         height: 150px;
@@ -121,6 +122,13 @@ background-color: #ffffff;
             height: 100%;
             width: 20%;
             object-fit: contain;
+            cursor: pointer;
+            transition: 0.3s;
+            opacity: 0.8;
+            &:hover{
+                opacity: 1;
+                scale: 1.5;
+            }
 
             .disable & {
                 filter: grayscale(1);
