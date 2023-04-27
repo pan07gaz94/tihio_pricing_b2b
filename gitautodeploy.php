@@ -1,11 +1,11 @@
 <?php
 const API_KEY = "YOUR API KEY HERE";
 const API_URL = "https://api.cloudways.com/api/v1";
-const EMAIL = "YOUR EMAIL GOES HERE";
+const EMAIL = "panagiwthsgazhs@gmail.com";
 
 /* examples
 const BranchName = "master";
-const GitUrl = "git@bitbucket.org:user22/repo_name.git";
+const GitUrl = "git@github.com:pan07gaz94/tihio_pricing_b2b.git";
 */
 
 //Use this function to contact CW API
