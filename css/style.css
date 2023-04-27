@@ -12,11 +12,12 @@ span.avalableMessage {
 /* line 28, style.scss */
 .disable .widget-body-parent {
   color: grey; }
-/* line 32, style.scss */
-.disable:hover {
-  scale: 1 !important; }
+@media only screen and (min-width: 640px) {
+  /* line 33, style.scss */
+  .disable:hover {
+    scale: 1 !important; } }
 
-/* line 39, style.scss */
+/* line 42, style.scss */
 body {
   width: 100%;
   display: flex;
@@ -30,7 +31,7 @@ body {
   padding: 0;
   margin: 0; }
 
-/* line 58, style.scss */
+/* line 61, style.scss */
 .header,
 .footer {
   background-color: #ffffff;
@@ -44,7 +45,7 @@ body {
   align-content: space-around;
   margin-top: 50px;
   margin-bottom: 1%; }
-  /* line 62, style.scss */
+  /* line 65, style.scss */
   .header .logo,
   .header .text1,
   .header .text2,
@@ -61,10 +62,10 @@ body {
     justify-content: center;
     align-items: center; }
 
-/* line 90, style.scss */
+/* line 93, style.scss */
 .header {
   margin-top: 1%; }
-  /* line 93, style.scss */
+  /* line 96, style.scss */
   .header .titlemain {
     font-size: 20px;
     font-weight: 700;
@@ -83,7 +84,7 @@ body {
     align-items: center;
     z-index: 2; }
 
-/* line 113, style.scss */
+/* line 116, style.scss */
 .nonos {
   display: flex;
   position: relative;
@@ -97,7 +98,7 @@ body {
   max-width: 650px;
   margin: auto;
   border-radius: 20px; }
-  /* line 128, style.scss */
+  /* line 131, style.scss */
   .nonos .widget-container {
     border-top: 1px solid #dfdfdf;
     border-radius: 10px;
@@ -112,12 +113,12 @@ body {
     justify-content: center;
     align-items: center;
     margin: 1%; }
-    /* line 143, style.scss */
+    /* line 146, style.scss */
     .nonos .widget-container.disable {
       filter: grayscale(1);
       background-color: #d3d3d394;
       border-radius: 10px; }
-    /* line 151, style.scss */
+    /* line 154, style.scss */
     .nonos .widget-container .widget-body-parent {
       position: relative;
       height: 100%;
@@ -127,27 +128,27 @@ body {
       flex-wrap: nowrap;
       justify-content: flex-start;
       margin: 5%; }
-      /* line 161, style.scss */
+      /* line 164, style.scss */
       .disable .nonos .widget-container .widget-body-parent {
         filter: grayscale(1); }
-      /* line 165, style.scss */
+      /* line 168, style.scss */
       .nonos .widget-container .widget-body-parent .widget-body-tetxt {
         font-family: 'Urbanist', sans-serif;
         font-size: 14px;
         letter-spacing: 1px;
         margin-top: 3%;
         line-height: 1.4; }
-        /* line 172, style.scss */
+        /* line 175, style.scss */
         .disable .nonos .widget-container .widget-body-parent .widget-body-tetxt {
           filter: grayscale(1); }
-    /* line 178, style.scss */
+    /* line 181, style.scss */
     .nonos .widget-container .body-container {
       display: flex;
       width: 100%; }
-      /* line 182, style.scss */
+      /* line 185, style.scss */
       .disable .nonos .widget-container .body-container {
         filter: grayscale(1); }
-    /* line 187, style.scss */
+    /* line 190, style.scss */
     .nonos .widget-container .preview-img {
       height: 100%;
       width: 20%;
@@ -155,14 +156,15 @@ body {
       cursor: pointer;
       transition: 0.3s;
       opacity: 0.8; }
-      /* line 195, style.scss */
-      .nonos .widget-container .preview-img:hover {
-        opacity: 1;
-        scale: 1.5; }
-      /* line 201, style.scss */
+      @media only screen and (min-width: 640px) {
+        /* line 198, style.scss */
+        .nonos .widget-container .preview-img:hover {
+          opacity: 1;
+          scale: 1.5; } }
+      /* line 204, style.scss */
       .disable .nonos .widget-container .preview-img {
         filter: grayscale(1); }
-    /* line 210, style.scss */
+    /* line 213, style.scss */
     .nonos .widget-container .widget-header {
       text-transform: capitalize;
       font-size: 21px;
@@ -177,16 +179,16 @@ body {
       justify-content: space-between;
       margin-top: 4%;
       letter-spacing: 0px; }
-      /* line 225, style.scss */
+      /* line 228, style.scss */
       .disable .nonos .widget-container .widget-header {
         filter: grayscale(1); }
-      /* line 230, style.scss */
+      /* line 233, style.scss */
       .nonos .widget-container .widget-header .price-list {
         font-weight: 500; }
-    /* line 235, style.scss */
+    /* line 238, style.scss */
     .nonos .widget-container .widget-body {
       width: 100%; }
-      /* line 238, style.scss */
+      /* line 241, style.scss */
       .disable .nonos .widget-container .widget-body {
         filter: grayscale(1); }
 
