@@ -9,6 +9,8 @@
 //     var windowHeight = $( window ).height();
 // $("body").css('height',windowHeight+"px")
 // })
+
+
 $(document).ready(function() {
   var currentUrl = window.location.href;
   var hasVParam = currentUrl.indexOf('?v=') !== -1;
@@ -29,11 +31,6 @@ $(document).ready(function() {
     localStorage.removeItem('vParamSet');
   }
 });
-
-
-
-
-
 
 
 $(".preview-img").on("click", function () {
