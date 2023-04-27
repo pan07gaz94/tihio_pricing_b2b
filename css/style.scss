@@ -29,9 +29,12 @@ span.avalableMessage {
         color: grey
     }
 
-    &:hover {
-        scale: 1 !important;
+    @media only screen and (min-width: 640px) {
+        &:hover {
+            scale: 1 !important;
+        }
     }
+
 }
 
 
@@ -191,13 +194,13 @@ body {
             cursor: pointer;
             transition: 0.3s;
             opacity: 0.8;
-
+            @media only screen and (min-width: 640px) {
             &:hover {
 
                 opacity: 1;
                 scale: 1.5;
             }
-
+        }
             .disable & {
 
                 filter: grayscale(1);

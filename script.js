@@ -46,7 +46,6 @@ $(document).ready(function () {
 });
 
 
-
 var lastClicked = null; // initialize lastClicked variable
 
 $(".preview-img").on("click", function () {
@@ -57,16 +56,24 @@ $(".preview-img").on("click", function () {
   }
 
   // Check if this is the same element as last clicked
-  if ($(this)[0] === lastClicked) {
-    $(this).removeClass('modalOpen')
-    $(this).css('width', '20%')
-    var parent = $(this).parent()
-    var childForHide = parent.find('.widget-body-parent')
-    parent.css('height', '150px')
-    childForHide.show()
-    lastClicked = null; // reset lastClicked
-  }
-  else {
+  if ($(this)[0] === lastClicked?.[0]) {
+    if ($(this).hasClass('modalOpen')) {
+      $(this).removeClass('modalOpen')
+      $(this).css('width', '20%')
+      var parent = $(this).parent()
+      var childForHide = parent.find('.widget-body-parent')
+      parent.css('height', '150px')
+      childForHide.show()
+      lastClicked = null; // reset lastClicked
+    } else {
+      $(this).addClass('modalOpen')
+      $(this).css('width', '100%')
+      var parent = $(this).parent()
+      var childForHide = parent.find('.widget-body-parent')
+      parent.css('height', '385px')
+      childForHide.hide()
+    }
+  } else {
     // open the clicked element
     $(this).addClass('modalOpen')
     $(this).css('width', '100%')
