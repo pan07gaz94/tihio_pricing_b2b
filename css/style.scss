@@ -1,8 +1,40 @@
 @import './_variables.scss';
 
 
+//###RESPONSIVE START
 
 @media only screen and (min-width: 640px) {}
+
+@media only screen and (min-width: 350px) {}
+
+//###RESPONSIVE START
+
+span.avalableMessage {
+    font-weight: 900 !important;
+    filter: none !important;
+}
+
+
+.disable {
+
+    &.spantitle {
+        text-decoration: line-through;
+    }
+
+    & .price-list {
+        text-decoration: line-through !important;
+    }
+
+    & .widget-body-parent {
+        color: grey
+    }
+
+    &:hover {
+        scale: 1 !important;
+    }
+}
+
+
 
 body {
     width: 100%;
@@ -113,8 +145,6 @@ body {
             background-color: #d3d3d394;
             border-radius: 10px;
 
-
-
         }
 
 
@@ -163,12 +193,15 @@ body {
             opacity: 0.8;
 
             &:hover {
+
                 opacity: 1;
                 scale: 1.5;
             }
 
             .disable & {
+
                 filter: grayscale(1);
+
 
             }
 
