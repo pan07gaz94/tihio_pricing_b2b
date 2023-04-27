@@ -1,9 +1,13 @@
 @import './_variables.scss';
 
 
+//###RESPONSIVE START
 
 @media only screen and (min-width: 640px) {}
 
+@media only screen and (min-width: 350px) {}
+
+//###RESPONSIVE START
 
 span.avalableMessage {
     font-weight: 900 !important;
