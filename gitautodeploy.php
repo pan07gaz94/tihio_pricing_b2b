@@ -1,5 +1,5 @@
 <?php
-const API_KEY = "YOUR API KEY HERE";
+const API_KEY = "ITfbPibncTsF5s9iqf6OvozuWPyQtu";
 const API_URL = "https://api.cloudways.com/api/v1";
 const EMAIL = "panagiwthsgazhs@gmail.com";
 
