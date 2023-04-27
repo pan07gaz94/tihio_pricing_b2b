@@ -1,5 +1,6 @@
 <?php
 $data = [
+    // ### START - Rigani trimeni ### //
     [
         'en' => [
             'img' => 'tsai1.png',
@@ -16,6 +17,9 @@ $data = [
             'availability' => 'enable'
         ]
     ],
+    // ### END - Rigani trimeni ### //
+
+    // ### START - Rigani xyma ### //
     [
         'en' => [
             'img' => 'tsai1.png',
@@ -48,6 +52,7 @@ $data = [
                 'availability' => 'enable'
             ]
         ],
+        // ### END - Rigani xyma ### //
         [
             'en' => [
                 'img' => 'tsai2.png',

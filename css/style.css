@@ -1,4 +1,4 @@
-/* line 3, style.scss */
+/* line 7, style.scss */
 body {
   width: 100%;
   display: flex;
@@ -8,30 +8,33 @@ body {
   align-content: center;
   justify-content: space-between;
   align-items: center;
-  overflow: auto; }
+  overflow: auto;
+  padding: 0;
+  margin: 0; }
 
-/* line 20, style.scss */
+/* line 26, style.scss */
 .header,
 .footer {
   background-color: #ffffff;
   display: flex;
-  width: 536px;
+  width: 100%;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: column;
   position: relative;
-  align-content: space-around; }
-  /* line 24, style.scss */
+  align-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 1%; }
+  /* line 30, style.scss */
   .header .logo,
-  .header .titlemain,
   .header .text1,
   .header .text2,
   .footer .logo,
-  .footer .titlemain,
   .footer .text1,
   .footer .text2 {
-    width: 75%;
+    width: 100%;
+    max-width: 400px;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -40,21 +43,29 @@ body {
     justify-content: center;
     align-items: center; }
 
-/* line 48, style.scss */
+/* line 58, style.scss */
 .header {
   margin-top: 1%; }
-  /* line 51, style.scss */
+  /* line 61, style.scss */
   .header .titlemain {
     font-size: 20px;
     font-weight: 700;
     font-family: 'Urbanist';
     background-color: black;
     color: white;
-    width: 100%;
     position: fixed;
-    top: 0px; }
+    top: 0px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; }
 
-/* line 63, style.scss */
+/* line 81, style.scss */
 .nonos {
   display: flex;
   position: relative;
@@ -64,14 +75,15 @@ body {
   align-content: flex-start;
   flex-direction: column;
   margin: 20px;
-  width: fit-content;
+  width: 100%;
+  max-width: 650px;
   margin: auto;
   border-radius: 20px; }
-  /* line 78, style.scss */
+  /* line 96, style.scss */
   .nonos .widget-container {
     border-top: 1px solid #dfdfdf;
     border-radius: 10px;
-    width: 536px;
+    width: 100%;
     height: 150px;
     background-color: #ffffff;
     display: flex;
@@ -79,15 +91,15 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin: 1%; }
-    /* line 93, style.scss */
+    /* line 111, style.scss */
     .nonos .widget-container.disable {
       filter: grayscale(1);
       background-color: #d3d3d394;
       border-radius: 10px; }
-    /* line 103, style.scss */
+    /* line 121, style.scss */
     .nonos .widget-container .widget-body-parent {
       position: relative;
       height: 100%;
@@ -97,27 +109,27 @@ body {
       flex-wrap: nowrap;
       justify-content: flex-start;
       margin: 5%; }
-      /* line 113, style.scss */
+      /* line 131, style.scss */
       .disable .nonos .widget-container .widget-body-parent {
         filter: grayscale(1); }
-      /* line 117, style.scss */
+      /* line 135, style.scss */
       .nonos .widget-container .widget-body-parent .widget-body-tetxt {
         font-family: 'Urbanist', sans-serif;
         font-size: 14px;
         letter-spacing: 1px;
         margin-top: 3%;
         line-height: 1.4; }
-        /* line 124, style.scss */
+        /* line 142, style.scss */
         .disable .nonos .widget-container .widget-body-parent .widget-body-tetxt {
           filter: grayscale(1); }
-    /* line 130, style.scss */
+    /* line 148, style.scss */
     .nonos .widget-container .body-container {
       display: flex;
       width: 100%; }
-      /* line 134, style.scss */
+      /* line 152, style.scss */
       .disable .nonos .widget-container .body-container {
         filter: grayscale(1); }
-    /* line 139, style.scss */
+    /* line 157, style.scss */
     .nonos .widget-container .preview-img {
       height: 100%;
       width: 20%;
@@ -125,14 +137,14 @@ body {
       cursor: pointer;
       transition: 0.3s;
       opacity: 0.8; }
-      /* line 147, style.scss */
+      /* line 165, style.scss */
       .nonos .widget-container .preview-img:hover {
         opacity: 1;
         scale: 1.5; }
-      /* line 152, style.scss */
+      /* line 170, style.scss */
       .disable .nonos .widget-container .preview-img {
         filter: grayscale(1); }
-    /* line 159, style.scss */
+    /* line 177, style.scss */
     .nonos .widget-container .widget-header {
       text-transform: capitalize;
       font-size: 21px;
@@ -147,16 +159,16 @@ body {
       justify-content: space-between;
       margin-top: 4%;
       letter-spacing: 0px; }
-      /* line 174, style.scss */
+      /* line 192, style.scss */
       .disable .nonos .widget-container .widget-header {
         filter: grayscale(1); }
-      /* line 179, style.scss */
+      /* line 197, style.scss */
       .nonos .widget-container .widget-header .price-list {
         font-weight: 500; }
-    /* line 184, style.scss */
+    /* line 202, style.scss */
     .nonos .widget-container .widget-body {
       width: 100%; }
-      /* line 187, style.scss */
+      /* line 205, style.scss */
       .disable .nonos .widget-container .widget-body {
         filter: grayscale(1); }
 
