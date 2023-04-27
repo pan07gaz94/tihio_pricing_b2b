@@ -19,7 +19,7 @@
 <body>
 	<div class="header">
 		<img class="logo" src="./images/logo.png"></img>
-		<div class="titlemain">B2B Pricelist111</div>
+		<div class="titlemain">B2B Pricelist</div>
 	</div>
 	<?php
 	include('data.php');
