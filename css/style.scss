@@ -12,6 +12,7 @@
 span.avalableMessage {
     font-weight: 900 !important;
     filter: none !important;
+    font-size: 19px !important;
 }
 
 
@@ -109,7 +110,7 @@ body {
         align-content: center;
         justify-content: center;
         align-items: center;
-        z-index: 2;
+        z-index: 7;
     }
 }
 
@@ -194,6 +195,7 @@ body {
             cursor: pointer;
             transition: 0.3s;
             opacity: 0.8;
+            z-index: 5;
             @media only screen and (min-width: 640px) {
             &:hover {
 
