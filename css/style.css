@@ -1,23 +1,24 @@
 /* line 12, style.scss */
 span.avalableMessage {
   font-weight: 900 !important;
-  filter: none !important; }
+  filter: none !important;
+  font-size: 19px !important; }
 
-/* line 20, style.scss */
+/* line 21, style.scss */
 .disable.spantitle {
   text-decoration: line-through; }
-/* line 24, style.scss */
+/* line 25, style.scss */
 .disable .price-list {
   text-decoration: line-through !important; }
-/* line 28, style.scss */
+/* line 29, style.scss */
 .disable .widget-body-parent {
   color: grey; }
 @media only screen and (min-width: 640px) {
-  /* line 33, style.scss */
+  /* line 34, style.scss */
   .disable:hover {
     scale: 1 !important; } }
 
-/* line 42, style.scss */
+/* line 43, style.scss */
 body {
   width: 100%;
   display: flex;
@@ -31,7 +32,7 @@ body {
   padding: 0;
   margin: 0; }
 
-/* line 61, style.scss */
+/* line 62, style.scss */
 .header,
 .footer {
   background-color: #ffffff;
@@ -45,7 +46,7 @@ body {
   align-content: space-around;
   margin-top: 50px;
   margin-bottom: 1%; }
-  /* line 65, style.scss */
+  /* line 66, style.scss */
   .header .logo,
   .header .text1,
   .header .text2,
@@ -62,10 +63,10 @@ body {
     justify-content: center;
     align-items: center; }
 
-/* line 93, style.scss */
+/* line 94, style.scss */
 .header {
   margin-top: 1%; }
-  /* line 96, style.scss */
+  /* line 97, style.scss */
   .header .titlemain {
     font-size: 20px;
     font-weight: 700;
@@ -82,9 +83,9 @@ body {
     align-content: center;
     justify-content: center;
     align-items: center;
-    z-index: 2; }
+    z-index: 7; }
 
-/* line 116, style.scss */
+/* line 117, style.scss */
 .nonos {
   display: flex;
   position: relative;
@@ -98,7 +99,7 @@ body {
   max-width: 650px;
   margin: auto;
   border-radius: 20px; }
-  /* line 131, style.scss */
+  /* line 132, style.scss */
   .nonos .widget-container {
     border-top: 1px solid #dfdfdf;
     border-radius: 10px;
@@ -113,12 +114,12 @@ body {
     justify-content: center;
     align-items: center;
     margin: 1%; }
-    /* line 146, style.scss */
+    /* line 147, style.scss */
     .nonos .widget-container.disable {
       filter: grayscale(1);
       background-color: #d3d3d394;
       border-radius: 10px; }
-    /* line 154, style.scss */
+    /* line 155, style.scss */
     .nonos .widget-container .widget-body-parent {
       position: relative;
       height: 100%;
@@ -128,27 +129,27 @@ body {
       flex-wrap: nowrap;
       justify-content: flex-start;
       margin: 5%; }
-      /* line 164, style.scss */
+      /* line 165, style.scss */
       .disable .nonos .widget-container .widget-body-parent {
         filter: grayscale(1); }
-      /* line 168, style.scss */
+      /* line 169, style.scss */
       .nonos .widget-container .widget-body-parent .widget-body-tetxt {
         font-family: 'Urbanist', sans-serif;
         font-size: 14px;
         letter-spacing: 1px;
         margin-top: 3%;
         line-height: 1.4; }
-        /* line 175, style.scss */
+        /* line 176, style.scss */
         .disable .nonos .widget-container .widget-body-parent .widget-body-tetxt {
           filter: grayscale(1); }
-    /* line 181, style.scss */
+    /* line 182, style.scss */
     .nonos .widget-container .body-container {
       display: flex;
       width: 100%; }
-      /* line 185, style.scss */
+      /* line 186, style.scss */
       .disable .nonos .widget-container .body-container {
         filter: grayscale(1); }
-    /* line 190, style.scss */
+    /* line 191, style.scss */
     .nonos .widget-container .preview-img {
       height: 100%;
       width: 20%;
@@ -158,14 +159,14 @@ body {
       opacity: 0.8;
       z-index: 5; }
       @media only screen and (min-width: 640px) {
-        /* line 199, style.scss */
+        /* line 200, style.scss */
         .nonos .widget-container .preview-img:hover {
           opacity: 1;
           scale: 1.5; } }
-      /* line 205, style.scss */
+      /* line 206, style.scss */
       .disable .nonos .widget-container .preview-img {
         filter: grayscale(1); }
-    /* line 214, style.scss */
+    /* line 215, style.scss */
     .nonos .widget-container .widget-header {
       text-transform: capitalize;
       font-size: 21px;
@@ -180,16 +181,16 @@ body {
       justify-content: space-between;
       margin-top: 4%;
       letter-spacing: 0px; }
-      /* line 229, style.scss */
+      /* line 230, style.scss */
       .disable .nonos .widget-container .widget-header {
         filter: grayscale(1); }
-      /* line 234, style.scss */
+      /* line 235, style.scss */
       .nonos .widget-container .widget-header .price-list {
         font-weight: 500; }
-    /* line 239, style.scss */
+    /* line 240, style.scss */
     .nonos .widget-container .widget-body {
       width: 100%; }
-      /* line 242, style.scss */
+      /* line 243, style.scss */
       .disable .nonos .widget-container .widget-body {
         filter: grayscale(1); }
 
