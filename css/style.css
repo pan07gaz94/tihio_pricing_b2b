@@ -155,16 +155,17 @@ body {
       object-fit: contain;
       cursor: pointer;
       transition: 0.3s;
-      opacity: 0.8; }
+      opacity: 0.8;
+      z-index: 5; }
       @media only screen and (min-width: 640px) {
-        /* line 198, style.scss */
+        /* line 199, style.scss */
         .nonos .widget-container .preview-img:hover {
           opacity: 1;
           scale: 1.5; } }
-      /* line 204, style.scss */
+      /* line 205, style.scss */
       .disable .nonos .widget-container .preview-img {
         filter: grayscale(1); }
-    /* line 213, style.scss */
+    /* line 214, style.scss */
     .nonos .widget-container .widget-header {
       text-transform: capitalize;
       font-size: 21px;
@@ -179,16 +180,16 @@ body {
       justify-content: space-between;
       margin-top: 4%;
       letter-spacing: 0px; }
-      /* line 228, style.scss */
+      /* line 229, style.scss */
       .disable .nonos .widget-container .widget-header {
         filter: grayscale(1); }
-      /* line 233, style.scss */
+      /* line 234, style.scss */
       .nonos .widget-container .widget-header .price-list {
         font-weight: 500; }
-    /* line 238, style.scss */
+    /* line 239, style.scss */
     .nonos .widget-container .widget-body {
       width: 100%; }
-      /* line 241, style.scss */
+      /* line 242, style.scss */
       .disable .nonos .widget-container .widget-body {
         filter: grayscale(1); }
 
