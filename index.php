@@ -28,7 +28,7 @@
 
 <body>
 	<div class="header">
-		<img class="logo" src="./images/logo.png"></img>
+		<a target="_blank" href="https://tihioherbs.gr"><img class="logo" src="./images/logo.png"></a></img>
 		<div class="titlemain">B2B Pricelist</div>
 	</div>
 	<?php

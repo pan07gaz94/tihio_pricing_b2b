@@ -39,18 +39,18 @@ $data = [
         // ### END - Rigani xyma ### //
         [
             'en' => [
-                'img' => 'tsai2.png',
+                'img' => 'tsai1.png',
                 'title' => 'Τσάι Τριμμένο',
                 'price' => 10.99,
                 'keimeno' => 'The glowing formula in our women’s body wash works with skin long after you shower to reveal natural radiance.',
-                'availability' => 'enable'
+                'availability' => 'disable'
             ],
             'gr' => [
-                'img' => 'tsai2.png',
+                'img' => 'tsai1.png',
                 'title' => 'Τσάι Τριμμένο',
                 'price' => 10.99,
                 'keimeno' =>'The glowing formula in our women’s body wash works with skin long after you shower to reveal natural radiance.',
-                'availability' => 'enable'
+                'availability' => 'disable'
             ]
         ],
 

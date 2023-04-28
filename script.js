@@ -1,16 +1,3 @@
-// $(".hover").mouseleave(
-//     function () {
-//       $(this).removeClass("hover");
-//     }
-//   );
-
-
-// $( window ).resize(function() {
-//     var windowHeight = $( window ).height();
-// $("body").css('height',windowHeight+"px")
-// })
-
-
 $(document).ready(function () {
   var currentUrl = window.location.href;
   var hasVParam = currentUrl.indexOf('?v=') !== -1;
@@ -31,13 +18,16 @@ $(document).ready(function () {
     localStorage.removeItem('vParamSet');
   }
 
-
-
-
   $('.disable').children().off('mouseenter mouseleave');
+  $('.disable .title').append("<span class='avalableMessage'> NOT AVAILABLE</span>");
 
-  $('.disable .title').append("<span class='avalableMessage'> NOT AVAILABLE</span>")
 
+
+
+  gtag('event', 'screen_view', {
+    'app_name': 'myAppName',
+    'screen_name': 'Home'
+  });
 
 
 
@@ -47,14 +37,11 @@ $(document).ready(function () {
 
 
 var lastClicked = null; // initialize lastClicked variable
-
 $(".preview-img").on("click", function () {
-
   // Check if parent has class "disable"
   if ($(this).parent().hasClass('disable')) {
     return; // if parent has "disable" class, do nothing and exit
   }
-
   // Check if this is the same element as last clicked
   if ($(this)[0] === lastClicked?.[0]) {
     if ($(this).hasClass('modalOpen')) {
