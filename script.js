@@ -21,18 +21,6 @@ $(document).ready(function () {
   $('.disable').children().off('mouseenter mouseleave');
   $('.disable .title').append("<span class='avalableMessage'> NOT AVAILABLE</span>");
 
-
-
-
-  gtag('event', 'screen_view', {
-    'app_name': 'myAppName',
-    'screen_name': 'Home'
-  });
-
-
-
-
-
 });
 
 
