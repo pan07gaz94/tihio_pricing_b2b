@@ -3,14 +3,17 @@
 
 <head>
 	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MM23BV4M4R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MM23BV4M4R"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-MM23BV4M4R');
-</script>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-MM23BV4M4R');
+	</script>
 
 
 
