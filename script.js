@@ -18,8 +18,25 @@ $(document).ready(function () {
     localStorage.removeItem('vParamSet');
   }
 
+
+
+
   $('.disable').children().off('mouseenter mouseleave');
   $('.disable .title').append("<span class='avalableMessage'> NOT AVAILABLE</span>");
+
+//THIS COMMENT AN EXEI TEXT DIAFORETIKOY MEGE8US ALLA OXI AKRAIA DIAFORA
+
+  // $(document).ready(function() {
+  //   var maxHeight = 0;
+  //   $('.widget-container').each(function() {
+  //     if ($(this).height() > maxHeight) {
+  //       maxHeight = $(this).height();
+  //     }
+  //   });
+  //   $('.widget-container').height(maxHeight);
+  // });
+
+
 
 });
 
@@ -37,7 +54,7 @@ $(".preview-img").on("click", function () {
       $(this).css('width', '20%')
       var parent = $(this).parent()
       var childForHide = parent.find('.widget-body-parent')
-      parent.css('height', '150px')
+      parent.css('height', 'fit-content')
       childForHide.show()
       lastClicked = null; // reset lastClicked
     } else {
@@ -63,7 +80,7 @@ $(".preview-img").on("click", function () {
       lastClicked.css('width', '20%')
       var parent = lastClicked.parent()
       var childForHide = parent.find('.widget-body-parent')
-      parent.css('height', '150px')
+      parent.css('height', 'fit-content')
       childForHide.show()
     }
     lastClicked = $(this); // update lastClicked
