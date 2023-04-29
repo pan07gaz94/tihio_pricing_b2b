@@ -1,40 +1,10 @@
-@media only screen and (max-width: 600px) {
-  /* line 7, style.scss */
-  .title {
-    font-size: 17px;
-    display: flex;
-    flex-direction: column; }
-    /* line 12, style.scss */
-    .title .avalableMessage {
-      font-size: 10px; }
-
-  /* line 16, style.scss */
-  .price-list {
-    font-size: 13px; } }
-/* line 25, style.scss */
+/* line 6, style.scss */
 span.avalableMessage {
   font-weight: 900;
   filter: none;
-  font-size: 19px; }
+  font-size: 20px; }
 
-/* line 34, style.scss */
-.disable.widget-body-tetxt {
-  text-decoration: line-through; }
-/* line 40, style.scss */
-.disable.spantitle {
-  text-decoration: line-through; }
-/* line 44, style.scss */
-.disable .price-list {
-  text-decoration: line-through !important; }
-/* line 48, style.scss */
-.disable .widget-body-parent {
-  color: grey; }
-@media only screen and (min-width: 640px) {
-  /* line 53, style.scss */
-  .disable:hover {
-    scale: 1 !important; } }
-
-/* line 62, style.scss */
+/* line 14, style.scss */
 body {
   width: 100%;
   display: flex;
@@ -48,7 +18,7 @@ body {
   padding: 0;
   margin: 0; }
 
-/* line 81, style.scss */
+/* line 33, style.scss */
 .header,
 .footer {
   background-color: #ffffff;
@@ -61,7 +31,7 @@ body {
   position: relative;
   align-content: space-around;
   margin-top: 50px; }
-  /* line 85, style.scss */
+  /* line 37, style.scss */
   .header .logo,
   .header .text1,
   .header .text2,
@@ -77,10 +47,10 @@ body {
     justify-content: center;
     align-items: center; }
 
-/* line 112, style.scss */
+/* line 64, style.scss */
 .header {
   margin-top: 1%; }
-  /* line 115, style.scss */
+  /* line 67, style.scss */
   .header .titlemain {
     font-size: 20px;
     font-weight: 700;
@@ -99,7 +69,7 @@ body {
     align-items: center;
     z-index: 7; }
 
-/* line 135, style.scss */
+/* line 87, style.scss */
 .nonos {
   display: flex;
   position: relative;
@@ -113,13 +83,13 @@ body {
   max-width: 650px;
   margin: auto;
   border-radius: 20px; }
-  /* line 150, style.scss */
+  /* line 101, style.scss */
   .nonos .widget-container {
-    border-top: 1px solid #dfdfdf;
+    border-top: 1px solid #979797;
     border-radius: 10px;
     width: 100%;
     height: 150px;
-    background-color: #ffffff;
+    background-color: white;
     display: flex;
     position: relative;
     flex-direction: row;
@@ -128,12 +98,12 @@ body {
     justify-content: center;
     align-items: center;
     margin: 1%; }
-    /* line 165, style.scss */
+    /* line 116, style.scss */
     .nonos .widget-container.disable {
       filter: grayscale(1);
       background-color: #d3d3d394;
       border-radius: 10px; }
-    /* line 173, style.scss */
+    /* line 124, style.scss */
     .nonos .widget-container .widget-body-parent {
       position: relative;
       height: 100%;
@@ -143,27 +113,29 @@ body {
       flex-wrap: nowrap;
       justify-content: flex-start;
       margin: 5%; }
-      /* line 183, style.scss */
+      /* line 134, style.scss */
       .disable .nonos .widget-container .widget-body-parent {
         filter: grayscale(1); }
-      /* line 187, style.scss */
+      /* line 138, style.scss */
       .nonos .widget-container .widget-body-parent .widget-body-text {
         font-family: 'Urbanist', sans-serif;
-        font-size: 14px;
+        font-size: 15px;
         letter-spacing: 1px;
         margin-top: 21px;
-        line-height: 25px; }
-        /* line 194, style.scss */
+        line-height: 25px;
+        border-top: 1px solid #ececec;
+        padding-top: 10px; }
+        /* line 149, style.scss */
         .disable .nonos .widget-container .widget-body-parent .widget-body-text {
           filter: grayscale(1); }
-    /* line 200, style.scss */
+    /* line 155, style.scss */
     .nonos .widget-container .body-container {
       display: flex;
       width: 100%; }
-      /* line 204, style.scss */
+      /* line 159, style.scss */
       .disable .nonos .widget-container .body-container {
         filter: grayscale(1); }
-    /* line 209, style.scss */
+    /* line 164, style.scss */
     .nonos .widget-container .preview-img {
       height: 100%;
       width: 20%;
@@ -174,19 +146,19 @@ body {
       opacity: 0.8;
       z-index: 5; }
       @media only screen and (min-width: 640px) {
-        /* line 220, style.scss */
+        /* line 175, style.scss */
         .nonos .widget-container .preview-img:hover {
           cursor: pointer;
           pointer-events: auto;
           opacity: 1;
-          scale: 1.5; } }
-      /* line 228, style.scss */
+          scale: 1.4; } }
+      /* line 183, style.scss */
       .disable .nonos .widget-container .preview-img {
         filter: grayscale(1); }
-    /* line 237, style.scss */
+    /* line 192, style.scss */
     .nonos .widget-container .widget-header {
       text-transform: capitalize;
-      font-size: 21px;
+      font-size: 20px;
       font-weight: 400;
       font-family: 'Urbanist', sans-serif;
       width: 100%;
@@ -198,30 +170,68 @@ body {
       justify-content: space-between;
       margin-top: 4%;
       letter-spacing: 0px; }
-      /* line 252, style.scss */
+      /* line 207, style.scss */
       .disable .nonos .widget-container .widget-header {
         filter: grayscale(1); }
-      /* line 257, style.scss */
+      /* line 212, style.scss */
       .nonos .widget-container .widget-header .price-list {
         font-weight: 500; }
-        /* line 260, style.scss */
+        /* line 215, style.scss */
         .nonos .widget-container .widget-header .price-list .kilos {
           font-size: 15px;
           color: #686868; }
-    /* line 267, style.scss */
+    /* line 222, style.scss */
     .nonos .widget-container .widget-body {
       width: 100%; }
-      /* line 270, style.scss */
+      /* line 225, style.scss */
       .disable .nonos .widget-container .widget-body {
         filter: grayscale(1); }
 
-/* line 278, style.scss */
+/* line 233, style.scss */
 .logo {
   cursor: pointer;
   pointer-events: auto; }
-  /* line 279, style.scss */
+  /* line 234, style.scss */
   .logo:hover {
     cursor: pointer;
     pointer-events: auto; }
+
+/* line 248, style.scss */
+.disable.widget-body-tetxt {
+  text-decoration: line-through; }
+/* line 253, style.scss */
+.disable.spantitle {
+  text-decoration: line-through; }
+/* line 257, style.scss */
+.disable .price-list {
+  text-decoration: line-through !important; }
+/* line 261, style.scss */
+.disable .widget-body-parent {
+  color: #979797; }
+@media only screen and (min-width: 640px) {
+  /* line 266, style.scss */
+  .disable:hover {
+    scale: 1 !important; } }
+
+@media only screen and (max-width: 600px) {
+  /* line 281, style.scss */
+  .nonos .widget-container .widget-body-parent .title {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column; }
+    /* line 286, style.scss */
+    .nonos .widget-container .widget-body-parent .title .avalableMessage {
+      font-size: 10px; }
+  /* line 291, style.scss */
+  .nonos .widget-container .widget-body-parent .price-list {
+    font-size: 17px; }
+  /* line 295, style.scss */
+  .nonos .widget-container .widget-body-parent .widget-body-text {
+    margin-top: 8px !important;
+    font-size: 14px; } }
+@media only screen and (max-width: 380px) {
+  /* line 305, style.scss */
+  .widget-container {
+    height: 200px !important; } }
 
 /*# sourceMappingURL=style.css.map */
