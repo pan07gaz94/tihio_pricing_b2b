@@ -2,9 +2,18 @@
 span.avalableMessage {
   font-weight: 900;
   filter: none;
-  font-size: 20px; }
+  font-size: 10px;
+  font-weight: 600;
+  filter: none;
+  border: 1px solid red;
+  color: red;
+  padding: 4px;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 10px; }
 
-/* line 14, style.scss */
+/* line 26, style.scss */
 body {
   width: 100%;
   display: flex;
@@ -18,7 +27,7 @@ body {
   padding: 0;
   margin: 0; }
 
-/* line 33, style.scss */
+/* line 45, style.scss */
 .header,
 .footer {
   background-color: #ffffff;
@@ -31,7 +40,7 @@ body {
   position: relative;
   align-content: space-around;
   margin-top: 50px; }
-  /* line 37, style.scss */
+  /* line 49, style.scss */
   .header .logo,
   .header .text1,
   .header .text2,
@@ -47,10 +56,10 @@ body {
     justify-content: center;
     align-items: center; }
 
-/* line 64, style.scss */
+/* line 76, style.scss */
 .header {
   margin-top: 1%; }
-  /* line 67, style.scss */
+  /* line 79, style.scss */
   .header .titlemain {
     font-size: 20px;
     font-weight: 700;
@@ -69,7 +78,7 @@ body {
     align-items: center;
     z-index: 7; }
 
-/* line 87, style.scss */
+/* line 99, style.scss */
 .nonos {
   display: flex;
   position: relative;
@@ -83,7 +92,7 @@ body {
   max-width: 650px;
   margin: auto;
   border-radius: 20px; }
-  /* line 101, style.scss */
+  /* line 113, style.scss */
   .nonos .widget-container {
     border-top: 1px solid #979797;
     border-radius: 10px;
@@ -98,12 +107,11 @@ body {
     justify-content: center;
     align-items: center;
     margin: 1%; }
-    /* line 116, style.scss */
+    /* line 128, style.scss */
     .nonos .widget-container.disable {
-      filter: grayscale(1);
       background-color: #d3d3d394;
       border-radius: 10px; }
-    /* line 124, style.scss */
+    /* line 136, style.scss */
     .nonos .widget-container .widget-body-parent {
       position: relative;
       height: 100%;
@@ -113,10 +121,10 @@ body {
       flex-wrap: nowrap;
       justify-content: flex-start;
       margin: 5%; }
-      /* line 134, style.scss */
+      /* line 146, style.scss */
       .disable .nonos .widget-container .widget-body-parent {
         filter: grayscale(1); }
-      /* line 138, style.scss */
+      /* line 150, style.scss */
       .nonos .widget-container .widget-body-parent .widget-body-text {
         font-family: 'Urbanist', sans-serif;
         font-size: 15px;
@@ -125,17 +133,17 @@ body {
         line-height: 25px;
         border-top: 1px solid #ececec;
         padding-top: 10px; }
-        /* line 149, style.scss */
+        /* line 161, style.scss */
         .disable .nonos .widget-container .widget-body-parent .widget-body-text {
           filter: grayscale(1); }
-    /* line 155, style.scss */
+    /* line 167, style.scss */
     .nonos .widget-container .body-container {
       display: flex;
       width: 100%; }
-      /* line 159, style.scss */
+      /* line 171, style.scss */
       .disable .nonos .widget-container .body-container {
         filter: grayscale(1); }
-    /* line 164, style.scss */
+    /* line 176, style.scss */
     .nonos .widget-container .preview-img {
       height: 100%;
       width: 20%;
@@ -146,16 +154,16 @@ body {
       opacity: 0.8;
       z-index: 5; }
       @media only screen and (min-width: 640px) {
-        /* line 175, style.scss */
+        /* line 187, style.scss */
         .nonos .widget-container .preview-img:hover {
           cursor: pointer;
           pointer-events: auto;
           opacity: 1;
           scale: 1.4; } }
-      /* line 183, style.scss */
-      .disable .nonos .widget-container .preview-img {
+      /* line 197, style.scss */
+      .nonos .widget-container .preview-img.disable {
         filter: grayscale(1); }
-    /* line 192, style.scss */
+    /* line 206, style.scss */
     .nonos .widget-container .widget-header {
       text-transform: capitalize;
       font-size: 20px;
@@ -170,67 +178,79 @@ body {
       justify-content: space-between;
       margin-top: 4%;
       letter-spacing: 0px; }
-      /* line 207, style.scss */
+      /* line 221, style.scss */
       .disable .nonos .widget-container .widget-header {
         filter: grayscale(1); }
-      /* line 212, style.scss */
+      /* line 226, style.scss */
       .nonos .widget-container .widget-header .price-list {
         font-weight: 500; }
-        /* line 215, style.scss */
+        /* line 229, style.scss */
         .nonos .widget-container .widget-header .price-list .kilos {
           font-size: 15px;
           color: #686868; }
-    /* line 222, style.scss */
+    /* line 236, style.scss */
     .nonos .widget-container .widget-body {
       width: 100%; }
-      /* line 225, style.scss */
+      /* line 239, style.scss */
       .disable .nonos .widget-container .widget-body {
         filter: grayscale(1); }
 
-/* line 233, style.scss */
+/* line 247, style.scss */
 .logo {
   cursor: pointer;
   pointer-events: auto; }
-  /* line 234, style.scss */
+  /* line 248, style.scss */
   .logo:hover {
     cursor: pointer;
     pointer-events: auto; }
 
-/* line 248, style.scss */
+/* line 262, style.scss */
 .disable.widget-body-tetxt {
   text-decoration: line-through; }
-/* line 253, style.scss */
+/* line 267, style.scss */
 .disable.spantitle {
   text-decoration: line-through; }
-/* line 257, style.scss */
+/* line 271, style.scss */
 .disable .price-list {
   text-decoration: line-through !important; }
-/* line 261, style.scss */
+/* line 275, style.scss */
 .disable .widget-body-parent {
   color: #979797; }
 @media only screen and (min-width: 640px) {
-  /* line 266, style.scss */
+  /* line 280, style.scss */
   .disable:hover {
     scale: 1 !important; } }
 
+/* line 291, style.scss */
+.title.disable {
+  display: flex; }
+
+/* line 296, style.scss */
+.title .disable:nth-child(1) {
+  order: 2; }
+
+/* line 302, style.scss */
+.title .disable:nth-child(2) {
+  order: 1; }
+
 @media only screen and (max-width: 600px) {
-  /* line 281, style.scss */
+  /* line 327, style.scss */
   .nonos .widget-container .widget-body-parent .title {
     font-size: 17px;
     display: flex;
     flex-direction: column; }
-    /* line 286, style.scss */
+    /* line 332, style.scss */
     .nonos .widget-container .widget-body-parent .title .avalableMessage {
       font-size: 10px; }
-  /* line 291, style.scss */
+  /* line 338, style.scss */
   .nonos .widget-container .widget-body-parent .price-list {
     font-size: 17px; }
-  /* line 295, style.scss */
+  /* line 342, style.scss */
   .nonos .widget-container .widget-body-parent .widget-body-text {
     margin-top: 8px !important;
     font-size: 14px; } }
 @media only screen and (max-width: 380px) {
-  /* line 305, style.scss */
+  /* line 352, style.scss */
   .widget-container {
     height: 200px !important; } }
 

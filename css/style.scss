@@ -6,7 +6,19 @@
 span.avalableMessage {
     font-weight: $font900;
     filter: none;
-    font-size: $szfont20;
+    font-size: $szfont10;
+    font-weight: 600;
+    filter: none;
+    border: 1px solid red;
+    color: red;
+    padding: 4px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin-right: $pd10;
+
+
+
 }
 
 
@@ -114,7 +126,7 @@ body {
         margin: 1%;
 
         &.disable {
-            filter: grayscale(1);
+            // filter: grayscale(1);
             background-color: $disable-color;
             border-radius: $border-radius;
 
@@ -180,7 +192,9 @@ body {
                 }
             }
 
-            .disable & {
+
+
+            &.disable {
 
                 filter: grayscale(1);
 
@@ -270,6 +284,38 @@ body {
 
 }
 
+;
+
+
+.title {
+    &.disable {
+        display: flex;
+    }
+}
+
+.title .disable:nth-child(1) {
+    order: 2;
+}
+
+;
+
+.title .disable:nth-child(2) {
+    order: 1;
+}
+
+;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -285,6 +331,7 @@ body {
 
                     .avalableMessage {
                         font-size: $szfont10;
+
                     }
                 }
 
@@ -305,4 +352,5 @@ body {
     .widget-container {
         height: 200px !important;
     }
+
 }
