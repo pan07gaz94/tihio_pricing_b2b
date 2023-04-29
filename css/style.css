@@ -1,27 +1,40 @@
-/* line 12, style.scss */
-span.avalableMessage {
-  font-weight: 900 !important;
-  filter: none !important;
-  font-size: 19px !important; }
+@media only screen and (max-width: 600px) {
+  /* line 7, style.scss */
+  .title {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column; }
+    /* line 12, style.scss */
+    .title .avalableMessage {
+      font-size: 10px; }
 
-/* line 21, style.scss */
+  /* line 16, style.scss */
+  .price-list {
+    font-size: 13px; } }
+/* line 25, style.scss */
+span.avalableMessage {
+  font-weight: 900;
+  filter: none;
+  font-size: 19px; }
+
+/* line 34, style.scss */
 .disable.widget-body-tetxt {
   text-decoration: line-through; }
-/* line 27, style.scss */
+/* line 40, style.scss */
 .disable.spantitle {
   text-decoration: line-through; }
-/* line 31, style.scss */
+/* line 44, style.scss */
 .disable .price-list {
   text-decoration: line-through !important; }
-/* line 35, style.scss */
+/* line 48, style.scss */
 .disable .widget-body-parent {
   color: grey; }
 @media only screen and (min-width: 640px) {
-  /* line 40, style.scss */
+  /* line 53, style.scss */
   .disable:hover {
     scale: 1 !important; } }
 
-/* line 49, style.scss */
+/* line 62, style.scss */
 body {
   width: 100%;
   display: flex;
@@ -35,7 +48,7 @@ body {
   padding: 0;
   margin: 0; }
 
-/* line 68, style.scss */
+/* line 81, style.scss */
 .header,
 .footer {
   background-color: #ffffff;
@@ -48,7 +61,7 @@ body {
   position: relative;
   align-content: space-around;
   margin-top: 50px; }
-  /* line 72, style.scss */
+  /* line 85, style.scss */
   .header .logo,
   .header .text1,
   .header .text2,
@@ -57,7 +70,6 @@ body {
   .footer .text2 {
     width: 100%;
     max-width: 400px;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -65,10 +77,10 @@ body {
     justify-content: center;
     align-items: center; }
 
-/* line 99, style.scss */
+/* line 112, style.scss */
 .header {
   margin-top: 1%; }
-  /* line 102, style.scss */
+  /* line 115, style.scss */
   .header .titlemain {
     font-size: 20px;
     font-weight: 700;
@@ -87,7 +99,7 @@ body {
     align-items: center;
     z-index: 7; }
 
-/* line 122, style.scss */
+/* line 135, style.scss */
 .nonos {
   display: flex;
   position: relative;
@@ -101,7 +113,7 @@ body {
   max-width: 650px;
   margin: auto;
   border-radius: 20px; }
-  /* line 137, style.scss */
+  /* line 150, style.scss */
   .nonos .widget-container {
     border-top: 1px solid #dfdfdf;
     border-radius: 10px;
@@ -116,12 +128,12 @@ body {
     justify-content: center;
     align-items: center;
     margin: 1%; }
-    /* line 152, style.scss */
+    /* line 165, style.scss */
     .nonos .widget-container.disable {
       filter: grayscale(1);
       background-color: #d3d3d394;
       border-radius: 10px; }
-    /* line 160, style.scss */
+    /* line 173, style.scss */
     .nonos .widget-container .widget-body-parent {
       position: relative;
       height: 100%;
@@ -131,27 +143,27 @@ body {
       flex-wrap: nowrap;
       justify-content: flex-start;
       margin: 5%; }
-      /* line 170, style.scss */
+      /* line 183, style.scss */
       .disable .nonos .widget-container .widget-body-parent {
         filter: grayscale(1); }
-      /* line 174, style.scss */
-      .nonos .widget-container .widget-body-parent .widget-body-tetxt {
+      /* line 187, style.scss */
+      .nonos .widget-container .widget-body-parent .widget-body-text {
         font-family: 'Urbanist', sans-serif;
         font-size: 14px;
         letter-spacing: 1px;
-        margin-top: 3%;
-        line-height: 1.4; }
-        /* line 181, style.scss */
-        .disable .nonos .widget-container .widget-body-parent .widget-body-tetxt {
+        margin-top: 21px;
+        line-height: 25px; }
+        /* line 194, style.scss */
+        .disable .nonos .widget-container .widget-body-parent .widget-body-text {
           filter: grayscale(1); }
-    /* line 187, style.scss */
+    /* line 200, style.scss */
     .nonos .widget-container .body-container {
       display: flex;
       width: 100%; }
-      /* line 191, style.scss */
+      /* line 204, style.scss */
       .disable .nonos .widget-container .body-container {
         filter: grayscale(1); }
-    /* line 196, style.scss */
+    /* line 209, style.scss */
     .nonos .widget-container .preview-img {
       height: 100%;
       width: 20%;
@@ -162,16 +174,16 @@ body {
       opacity: 0.8;
       z-index: 5; }
       @media only screen and (min-width: 640px) {
-        /* line 207, style.scss */
+        /* line 220, style.scss */
         .nonos .widget-container .preview-img:hover {
           cursor: pointer;
           pointer-events: auto;
           opacity: 1;
           scale: 1.5; } }
-      /* line 215, style.scss */
+      /* line 228, style.scss */
       .disable .nonos .widget-container .preview-img {
         filter: grayscale(1); }
-    /* line 224, style.scss */
+    /* line 237, style.scss */
     .nonos .widget-container .widget-header {
       text-transform: capitalize;
       font-size: 21px;
@@ -186,24 +198,28 @@ body {
       justify-content: space-between;
       margin-top: 4%;
       letter-spacing: 0px; }
-      /* line 239, style.scss */
+      /* line 252, style.scss */
       .disable .nonos .widget-container .widget-header {
         filter: grayscale(1); }
-      /* line 244, style.scss */
+      /* line 257, style.scss */
       .nonos .widget-container .widget-header .price-list {
         font-weight: 500; }
-    /* line 249, style.scss */
+        /* line 260, style.scss */
+        .nonos .widget-container .widget-header .price-list .kilos {
+          font-size: 15px;
+          color: #686868; }
+    /* line 267, style.scss */
     .nonos .widget-container .widget-body {
       width: 100%; }
-      /* line 252, style.scss */
+      /* line 270, style.scss */
       .disable .nonos .widget-container .widget-body {
         filter: grayscale(1); }
 
-/* line 260, style.scss */
+/* line 278, style.scss */
 .logo {
   cursor: pointer;
   pointer-events: auto; }
-  /* line 261, style.scss */
+  /* line 279, style.scss */
   .logo:hover {
     cursor: pointer;
     pointer-events: auto; }

@@ -3,22 +3,35 @@
 
 //###RESPONSIVE START
 
-@media only screen and (min-width: 640px) {}
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 17px;
+        display: flex;
+        flex-direction: column;
 
-@media only screen and (min-width: 350px) {}
+        .avalableMessage {
+            font-size: 10px;
+        }
+    }
+    .price-list{
+        font-size: 13px;
+    }
+
+
+}
 
 //###RESPONSIVE START
 
 span.avalableMessage {
-    font-weight: 900 !important;
-    filter: none !important;
-    font-size: 19px !important;
+    font-weight: 900 ;
+    filter: none ;
+    font-size: 19px ;
 }
 
 
 .disable {
 
-    &.widget-body-tetxt{
+    &.widget-body-tetxt {
 
         text-decoration: line-through;
 
@@ -74,7 +87,7 @@ body {
     .text2 {
         width: 100%;
         max-width: 400px;
-        height: fit-content;
+        // height: fit-content;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -171,12 +184,12 @@ body {
                 filter: grayscale(1);
             }
 
-            .widget-body-tetxt {
+            .widget-body-text {
                 font-family: 'Urbanist', sans-serif;
                 font-size: 14px;
                 letter-spacing: 1px;
-                margin-top: 3%;
-                line-height: 1.4;
+                margin-top: 21px;
+                line-height: 25px;
 
                 .disable & {
                     filter: grayscale(1);
@@ -243,6 +256,11 @@ body {
 
             .price-list {
                 font-weight: 500;
+
+                .kilos {
+                    font-size: 15px;
+                    color: #686868;
+                }
             }
         }
 
@@ -257,11 +275,12 @@ body {
     }
 }
 
-.logo{
-    &:hover{
+.logo {
+    &:hover {
         cursor: pointer;
         pointer-events: auto;
     }
+
     cursor: pointer;
     pointer-events: auto;
 }

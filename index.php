@@ -42,9 +42,9 @@
 		<div class='widget-body-parent list-item-" . $i . "-body " . $data[$i]['en']['availability'] . " '>
 			<div class='widget-header list-item-" . $i . "-header " . $data[$i]['en']['availability'] . " '>
 				<div class='title " . $data[$i]['en']['availability'] . " '><span class='spantitle " . $data[$i]['en']['availability'] . "'>" . $data[$i]['en']['title'] . "</span></div>
-				<div class='price-list list-item-" . $i . "-price " . $data[$i]['en']['availability'] . " '>" . $data[$i]['en']['price'] . "€</div>
+				<div class='price-list list-item-" . $i . "-price " . $data[$i]['en']['availability'] . " '>" . $data[$i]['en']['price'] . "€<span class='kilos'> / Kgr</span></div>
 			</div>
-			<div class='widget-body-tetxt list-item-" . $i . "-body " . $data[$i]['en']['availability'] . " '>" . $data[$i]['en']['keimeno'] . "</div>
+			<div class='widget-body-text list-item-" . $i . "-body " . $data[$i]['en']['availability'] . " '>" . $data[$i]['en']['keimeno'] . "</div>
 		</div>
 	</div>";
 	}
