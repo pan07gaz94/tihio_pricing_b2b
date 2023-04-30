@@ -291,11 +291,11 @@ body {
   .nonos .widget-container .widget-body-parent .widget-body-text {
     margin-top: 8px !important;
     font-size: 13px; } }
-  @media only screen and (max-width: 600px) and (max-width: 350px) {
+  @media only screen and (max-width: 600px) and (max-width: 400px) {
     /* line 341, style.scss */
     .nonos .widget-container .widget-body-parent .widget-body-text {
       letter-spacing: normal;
-      font-size: 12.5px; } }
+      font-size: 12px; } }
 
 @media only screen and (max-width: 380px) {
   /* line 356, style.scss */
