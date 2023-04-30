@@ -60,8 +60,8 @@
 		<div class="text2">
 			<div class="footeraki">For further information for the orders please
 				<span class="contanct-us-parent">
-					<a class="contanct-us contanct-us-1" href="mailto:info@tihioherbs.gr"> Contact us </a> or
-					<a class="contanct-us contanct-us-2" href="tel:+306947131388"> Call us </a>
+					<a class="contanct-us contanct-us-1" href="mailto:info@tihioherbs.gr"> Contact us </a>
+					<!-- <a class="contanct-us contanct-us-2" href="tel:+306947131388"> Call us </a> -->
 				</span>
 			</div>
 		</div>
