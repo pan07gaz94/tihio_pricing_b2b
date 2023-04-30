@@ -86,3 +86,14 @@ $(".preview-img").on("click", function () {
     lastClicked = $(this); // update lastClicked
   }
 });
+
+
+
+
+
+$(window).on('resize', function() {
+  var bodyHeight = $('body').height();
+  var bodyWidth = $('body').width();
+  $('html').css('--body-height', bodyHeight + 'px');
+  $('html').css('--body-width', bodyWidth + 'px');
+});

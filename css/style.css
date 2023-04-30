@@ -1,4 +1,4 @@
-/* line 6, style.scss */
+/* line 3, style.scss */
 span.avalableMessage {
   font-weight: 900;
   filter: none;
@@ -12,7 +12,7 @@ span.avalableMessage {
   margin-right: 10px;
   vertical-align: middle; }
 
-/* line 23, style.scss */
+/* line 18, style.scss */
 body {
   width: 100%;
   display: flex;
@@ -26,7 +26,7 @@ body {
   padding: 0;
   margin: 0; }
 
-/* line 42, style.scss */
+/* line 36, style.scss */
 .header,
 .footer {
   background-color: #ffffff;
@@ -39,7 +39,7 @@ body {
   position: relative;
   align-content: space-around;
   margin-top: 50px; }
-  /* line 46, style.scss */
+  /* line 40, style.scss */
   .header .logo,
   .header .text1,
   .header .text2,
@@ -55,10 +55,10 @@ body {
     justify-content: center;
     align-items: center; }
 
-/* line 73, style.scss */
+/* line 64, style.scss */
 .header {
   margin-top: 1%; }
-  /* line 76, style.scss */
+  /* line 67, style.scss */
   .header .titlemain {
     font-size: 20px;
     font-weight: 700;
@@ -77,7 +77,11 @@ body {
     align-items: center;
     z-index: 7; }
 
-/* line 96, style.scss */
+/* line 87, style.scss */
+.footer {
+  margin-bottom: 70px; }
+
+/* line 91, style.scss */
 .nonos {
   display: flex;
   position: relative;
@@ -91,7 +95,7 @@ body {
   max-width: 650px;
   margin: auto;
   border-radius: 20px; }
-  /* line 110, style.scss */
+  /* line 105, style.scss */
   .nonos .widget-container {
     border-top: 1px solid #979797;
     width: 100%;
@@ -105,11 +109,10 @@ body {
     justify-content: center;
     align-items: center;
     margin: 1%; }
-    /* line 125, style.scss */
+    /* line 119, style.scss */
     .nonos .widget-container.disable {
-      background-color: #d3d3d394;
-      border-radius: 10px; }
-    /* line 133, style.scss */
+      background-color: #d3d3d394; }
+    /* line 125, style.scss */
     .nonos .widget-container .widget-body-parent {
       position: relative;
       height: 100%;
@@ -119,30 +122,30 @@ body {
       flex-wrap: nowrap;
       justify-content: flex-start;
       margin: 5%; }
-      /* line 143, style.scss */
+      /* line 135, style.scss */
       .disable .nonos .widget-container .widget-body-parent {
         filter: grayscale(1); }
-      /* line 147, style.scss */
+      /* line 139, style.scss */
       .nonos .widget-container .widget-body-parent .widget-body-text {
         font-family: 'Urbanist', sans-serif;
         font-size: 15px;
         letter-spacing: 1px;
-        margin-top: 21px;
+        margin-top: 10px;
         line-height: 25px;
         border-top: 1px solid #ececec;
         padding-top: 10px;
         font-weight: 100; }
-        /* line 159, style.scss */
+        /* line 149, style.scss */
         .disable .nonos .widget-container .widget-body-parent .widget-body-text {
           filter: grayscale(1); }
-    /* line 165, style.scss */
+    /* line 155, style.scss */
     .nonos .widget-container .body-container {
       display: flex;
       width: 100%; }
-      /* line 169, style.scss */
+      /* line 159, style.scss */
       .disable .nonos .widget-container .body-container {
         filter: grayscale(1); }
-    /* line 174, style.scss */
+    /* line 164, style.scss */
     .nonos .widget-container .preview-img {
       height: 100%;
       width: 20%;
@@ -153,16 +156,16 @@ body {
       opacity: 0.8;
       z-index: 5; }
       @media only screen and (min-width: 640px) {
-        /* line 185, style.scss */
+        /* line 175, style.scss */
         .nonos .widget-container .preview-img:hover {
           cursor: pointer;
           pointer-events: auto;
           opacity: 1;
           scale: 1.4; } }
-      /* line 195, style.scss */
+      /* line 185, style.scss */
       .nonos .widget-container .preview-img.disable {
         filter: grayscale(1); }
-    /* line 204, style.scss */
+    /* line 190, style.scss */
     .nonos .widget-container .widget-header {
       text-transform: capitalize;
       font-size: 20px;
@@ -175,82 +178,116 @@ body {
       align-content: center;
       flex-direction: row;
       justify-content: space-between;
-      margin-top: 4%;
+      margin-top: 1%;
       letter-spacing: 0px; }
-      /* line 219, style.scss */
+      /* line 205, style.scss */
       .disable .nonos .widget-container .widget-header {
         filter: grayscale(1); }
-      /* line 224, style.scss */
+      /* line 210, style.scss */
       .nonos .widget-container .widget-header .price-list {
         font-weight: 500; }
-        /* line 227, style.scss */
+        /* line 213, style.scss */
         .nonos .widget-container .widget-header .price-list .kilos {
           font-size: 15px;
           color: #8f8f8f;
           font-weight: 166.6666666667; }
-    /* line 235, style.scss */
+    /* line 221, style.scss */
     .nonos .widget-container .widget-body {
       width: 100%; }
-      /* line 238, style.scss */
+      /* line 224, style.scss */
       .disable .nonos .widget-container .widget-body {
         filter: grayscale(1); }
 
-/* line 246, style.scss */
+/* line 232, style.scss */
 .logo {
   cursor: pointer;
   pointer-events: auto; }
-  /* line 247, style.scss */
+  /* line 237, style.scss */
   .logo:hover {
     cursor: pointer;
     pointer-events: auto; }
 
-/* line 261, style.scss */
+/* line 245, style.scss */
 .disable.widget-body-tetxt {
   text-decoration: line-through; }
-/* line 266, style.scss */
+/* line 249, style.scss */
 .disable.spantitle {
   text-decoration: line-through; }
-/* line 270, style.scss */
+/* line 253, style.scss */
 .disable .price-list {
   text-decoration: line-through !important; }
-/* line 274, style.scss */
+/* line 257, style.scss */
 .disable .widget-body-parent {
   color: #979797; }
 @media only screen and (min-width: 640px) {
-  /* line 279, style.scss */
+  /* line 262, style.scss */
   .disable:hover {
     scale: 1 !important; } }
 
-/* line 290, style.scss */
-.title.disable {
-  display: flex; }
+/* line 269, style.scss */
+.title {
+  display: flex;
+  flex-direction: column; }
 
-/* line 295, style.scss */
+/* line 275, style.scss */
 .title .disable:nth-child(1) {
   order: 2; }
 
-/* line 301, style.scss */
+/* line 279, style.scss */
 .title .disable:nth-child(2) {
-  order: 1; }
+  order: 3; }
+
+/* line 283, style.scss */
+.text2 {
+  font-size: 20px; }
+
+/* line 287, style.scss */
+.contanct-us {
+  pointer-events: all;
+  cursor: pointer; }
+
+/* line 292, style.scss */
+.variety {
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 24px; }
+
+/* line 298, style.scss */
+.spantitle {
+  line-height: 28px; }
+
+/* line 302, style.scss */
+.footeraki {
+  width: 100%;
+  position: absolute;
+  display: contents; }
+
+/* line 308, style.scss */
+.taxes {
+  margin: 5px;
+  font-size: 20px;
+  position: relative;
+  font-weight: 700;
+  margin-bottom: 15px; }
 
 @media only screen and (max-width: 600px) {
-  /* line 326, style.scss */
+  /* line 322, style.scss */
   .nonos .widget-container .widget-body-parent .title {
     font-size: 17px;
     display: flex;
     flex-direction: column; }
-    /* line 331, style.scss */
+    /* line 327, style.scss */
     .nonos .widget-container .widget-body-parent .title .avalableMessage {
       font-size: 10px; }
-  /* line 337, style.scss */
+  /* line 332, style.scss */
   .nonos .widget-container .widget-body-parent .price-list {
     font-size: 17px; }
-  /* line 341, style.scss */
+  /* line 336, style.scss */
   .nonos .widget-container .widget-body-parent .widget-body-text {
     margin-top: 8px !important;
     font-size: 14px; } }
 @media only screen and (max-width: 380px) {
-  /* line 351, style.scss */
+  /* line 346, style.scss */
   .widget-container {
     height: 200px !important; } }
 

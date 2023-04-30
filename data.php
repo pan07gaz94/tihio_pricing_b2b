@@ -1,73 +1,83 @@
 <?php
 $data = [
-    // ### START - Rigani trimeni ### //
     [
         'en' => [
-            'img' => 'rigani_1.png',
-            'title' => 'Ρίγανη Τριμμένη',
-            'price' => "10,99",
-            'keimeno' => 'Origanum vulgare, commonly known as "wild oregano," is a perennial herb with a pungent and slightly bitter taste. Our oregano variety is grown in the beautiful region of Tihio, Greece, using organic and sustainable farming methods. As a result, our product is 100% bio and free from harmful chemicals. Taste the difference with our premium quality Origanum vulgare and elevate your dishes to a whole new level.',
+            //#####__Ρίγανη - Χύμα - Αγγλικά
+            'img' => 'rigani_2.png',
+            'title' => 'Greek Oregano',
+            'variety' => 'origanum vulgare ssp. hirtum',
+            'price' => "14,00",
+            'keimeno' => "Dried oregano in bunches.\nPicked by hand and dried in a stone barn exposed to the pure clean air of the forest. Organic cultivation from the mountain Tihio Fokidas in Greece",
             'availability' => 'enable'
         ],
         'gr' => [
-            'img' => 'rigani_1.png',
-            'title' => 'Ρίγανη Τριμμένη',
-            'price' => "10,99",
-            'keimeno' =>'The glowing formula in our women’s body wash works with skin long after you shower to reveal natural radiance.',
+            //#####__Ρίγανη - Χύμα - Ελληνικά
+            'img' => 'rigani_2.png',
+            'title' => 'Greek Oregano',
+            'variety' => 'origanum vulgare ssp. hirtum',
+            'price' => "14,00",
+            'keimeno' => "Dried oregano in bunches.\nPicked by hand and dried in a stone barn exposed to the pure clean air of the forest. Organic cultivation from the mountain Tihio Fokidas in Greece",
             'availability' => 'enable'
         ]
     ],
-    // ### END - Rigani trimeni ### //
-
-    // ### START - Rigani xyma ### //
     [
         'en' => [
-            'img' => 'rigani_2.png',
-            'title' => 'Ρίγανη Χύμα',
-            'price' => "10,99",
-            'keimeno' =>'The glowing formula in our women’s body wash works with skin long after you shower to reveal natural radiance.',
+            //#####__Ρίγανη - Τριμμένη - Αγγλικά
+            'img' => 'rigani_1.png',
+            'title' => 'Greek Oregano',
+            'variety' => 'origanum vulgare ssp. hirtum',
+            'price' => "20,50",
+            'keimeno' => "Dried oregano leaves cut and sifted.\nPicked by hand and dried in a stone barn exposed to the pure clean air of the forest. Organic cultivation from the mountain Tihio Fokidas in Greece",
             'availability' => 'enable'
         ],
         'gr' => [
-            'img' => 'rigani_2.png',
-            'title' => 'Ρίγανη Χύμα',
-            'price' => "10,99",
-            'keimeno' =>'The glowing formula in our women’s body wash works with skin long after you shower to reveal natural radiance.',
+            //#####__Ρίγανη - Τριμμένη - Ελληνικά
+            'img' => 'rigani_1.png',
+            'title' => 'Greek Oregano',
+            'variety' => 'origanum vulgare ssp. hirtum',
+            'price' => "20,50",
+            'keimeno' => "Dried oregano leaves cut and sifted.\nPicked by hand and dried in a stone barn exposed to the pure clean air of the forest. Organic cultivation from the mountain Tihio Fokidas in Greece",
             'availability' => 'enable'
         ]
+    ],
+    [
+        'en' => [
+            //#####__Τσάι - Χύμα - Αγγλικά
+            'img' => 'tsai2.png',
+            'title' => 'Greek mountain tea',
+            'variety' => 'sideritis scardica',
+            'price' => "17,00",
+            'keimeno' => "Dried bunches of greek mountain tea.\nPicked by hand and dried in a stone barn exposed to the pure clean air of the forest. Organic cultivation from the mountain Tihio Fokidas in Greece",
+            'availability' => 'enable'
         ],
-        // ### END - Rigani xyma ### //
-        [
-            'en' => [
-                'img' => 'tsai1.png',
-                'title' => 'Τσάι Τριμμένο',
-                'price' => "10,99",
-                'keimeno' => 'The glowing formula in our women’s body wash works with skin long after you shower to reveal natural radiance.',
-                'availability' => 'disable'
-            ],
-            'gr' => [
-                'img' => 'tsai1.png',
-                'title' => 'Τσάι Τριμμένο',
-                'price' => "10,99",
-                'keimeno' =>'The glowing formula in our women’s body wash works with skin long after you shower to reveal natural radiance.',
-                'availability' => 'disable'
-            ]
-        ],
-
-        [
-            'en' => [
-                'img' => 'tsai2.png',
-                'title' => 'Τσάι Χύμα',
-                'price' => "10,99",
-                'keimeno' => 'The glowing formula in our women’s body wash works with skin long after you shower to reveal natural radiance.',
-                'availability' => 'disable'
-            ],
-            'gr' => [
-                'img' => 'tsai2.png',
-                'title' => 'Τσάι Χύμα',
-                'price' => "10,99",
-                'keimeno' => 'The glowing formula in our women’s body wash works with skin long after you shower to reveal natural radiance.',
-                'availability' => 'disable'
-            ]
+        'gr' => [
+            //#####__Τσάι - Χύμα - Ελληνικά
+            'img' => 'tsai2.png',
+            'title' => 'Greek mountain tea',
+            'variety' => 'sideritis scardica',
+            'price' => "17,00",
+            'keimeno' => "Dried bunches of greek mountain tea.\nPicked by hand and dried in a stone barn exposed to the pure clean air of the forest. Organic cultivation from the mountain Tihio Fokidas in Greece",
+            'availability' => 'enable'
         ]
+    ],
+    [
+        'en' => [
+            //#####__Τσάι - Τριμμένο - Αγγλικά
+            'img' => 'tsai1.png',
+            'title' => 'Greek mountain tea',
+            'variety' => 'sideritis scardica',
+            'price' => "00,00",
+            'keimeno' => "Loose dried leaves of Greek mountain tea. \nHandpicked and dried in a stone barn exposed to the pure clean air of the forest. Organically cultivated in the mountain Tihio Fokidas region of Greece.",
+            'availability' => 'disable'
+        ],
+        'gr' => [
+            //#####__Τσάι - Τριμμένο - Ελληνικά
+            'img' => 'tsai1.png',
+            'title' => 'Greek mountain tea',
+            'variety' => 'sideritis scardica',
+            'price' => "00,00",
+            'keimeno' => "Loose dried leaves of Greek mountain tea. \nHandpicked and dried in a stone barn exposed to the pure clean air of the forest. Organically cultivated in the mountain Tihio Fokidas region of Greece.",
+            'availability' => 'disable'
+        ]
+    ]
 ];

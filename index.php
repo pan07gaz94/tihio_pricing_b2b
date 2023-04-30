@@ -16,7 +16,9 @@
 	</script>
 
 
-
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
+	<meta name="bingbot" content="noindex, nofollow">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,18 +46,25 @@
 		<img class='preview-img list-item-" . $i . "-img " . $data[$i]['en']['availability'] . " ' src='./images/" . $data[$i]['en']['img'] . "' alt=''>
 		<div class='widget-body-parent list-item-" . $i . "-body " . $data[$i]['en']['availability'] . " '>
 			<div class='widget-header list-item-" . $i . "-header " . $data[$i]['en']['availability'] . " '>
-				<div class='title " . $data[$i]['en']['availability'] . " '><span class='spantitle " . $data[$i]['en']['availability'] . "'>" . $data[$i]['en']['title'] . "</span></div>
-				<div class='price-list list-item-" . $i . "-price " . $data[$i]['en']['availability'] . " '>" . $data[$i]['en']['price'] . "€<span class='kilos'> / Kgr</span></div>
+				<div class='title " . $data[$i]['en']['availability'] . " '><span class='spantitle " . $data[$i]['en']['availability'] . "'>" . $data[$i]['en']['title'] . "</span><span class='variety variety-" . $i . " " . $data[$i]['en']['availability'] . " '>" . $data[$i]['en']['variety'] . "</span></div>
+				<div class='price-list list-item-" . $i . "-price " . $data[$i]['en']['availability'] . " '>" . $data[$i]['en']['price'] . "€*<span class='kilos'> / Kgr</span></div>
 			</div>
-			<div class='widget-body-text list-item-" . $i . "-body " . $data[$i]['en']['availability'] . " '>" . $data[$i]['en']['keimeno'] . "</div>
+			<div class='widget-body-text list-item-" . $i . "-body " . $data[$i]['en']['availability'] . " '>" . nl2br($data[$i]['en']['keimeno']) . "</div>
 		</div>
 	</div>";
 	}
 	echo "</div>" ?>
 
 	<div class="footer">
-		<div class="text1">foroi</div>
-		<div class="text2">posotites</div>
+		<div class="text1 taxes">*No taxes included</div>
+		<div class="text2">
+			<div class="footeraki">For further information for the orders please
+				<span class="contanct-us-parent">
+					<a class="contanct-us contanct-us-1" href="mailto:info@tihioherbs.gr"> Contact us </a> or
+					<a class="contanct-us contanct-us-2" href="tel:+306947131388"> Call us </a>
+				</span>
+			</div>
+		</div>
 	</div>
 	<script src="./script.js?r=<?php echo rand(); ?>"></script>
 </body>
