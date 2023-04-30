@@ -1,48 +1,22 @@
 @import './_variables.scss';
 
-
-//###RESPONSIVE START
-
-@media only screen and (min-width: 640px) {}
-
-@media only screen and (min-width: 350px) {}
-
-//###RESPONSIVE START
-
 span.avalableMessage {
-    font-weight: 900 !important;
-    filter: none !important;
-    font-size: 19px !important;
+    font-weight: $font900;
+    filter: none;
+    font-size: $szfont10;
+    border: 1px solid red;
+    color: red;
+    padding: 4px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin-right: $pd10;
+    vertical-align: middle;
 }
-
-
-.disable {
-
-    &.spantitle {
-        text-decoration: line-through;
-    }
-
-    & .price-list {
-        text-decoration: line-through !important;
-    }
-
-    & .widget-body-parent {
-        color: grey
-    }
-
-    @media only screen and (min-width: 640px) {
-        &:hover {
-            scale: 1 !important;
-        }
-    }
-
-}
-
 
 
 body {
     width: 100%;
-    // height: 100vh;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -68,15 +42,12 @@ body {
     .text2 {
         width: 100%;
         max-width: 400px;
-        height: fit-content;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-content: center;
         justify-content: center;
         align-items: center;
-
-
     }
 
     display: flex;
@@ -88,15 +59,14 @@ body {
     position: relative;
     align-content: space-around;
     margin-top: 50px;
-    margin-bottom: 1%;
 }
 
 .header {
     margin-top: 1%;
 
     .titlemain {
-        font-size: 20px;
-        font-weight: 700;
+        font-size: $szfont20;
+        font-weight: $font700;
         font-family: 'Urbanist';
         background-color: black;
         color: white;
@@ -114,8 +84,11 @@ body {
     }
 }
 
+.footer {
+    margin-bottom: 70px;
+}
+
 .nonos {
-    // background-color: #0d471f;
     display: flex;
     position: relative;
     flex-wrap: nowrap;
@@ -127,14 +100,13 @@ body {
     width: 100%;
     max-width: 650px;
     margin: auto;
-    border-radius: 20px;
+    border-radius: $border-radius*2;
 
     .widget-container {
-        border-top: 1px solid #dfdfdf;
-        border-radius: 10px;
+        border-top: 1px solid $disable-bg-color;
         width: 100%;
-        height: 150px;
-        background-color: #ffffff;
+        height: max-content;
+        background-color: $white;
         display: flex;
         position: relative;
         flex-direction: row;
@@ -145,10 +117,8 @@ body {
         margin: 1%;
 
         &.disable {
-            filter: grayscale(1);
-            background-color: #d3d3d394;
-            border-radius: 10px;
-
+            background-color: $disable-color;
+            // border-radius: $border-radius;
         }
 
 
@@ -166,12 +136,15 @@ body {
                 filter: grayscale(1);
             }
 
-            .widget-body-tetxt {
+            .widget-body-text {
                 font-family: 'Urbanist', sans-serif;
-                font-size: 14px;
+                font-size: $szfont15;
                 letter-spacing: 1px;
-                margin-top: 3%;
-                line-height: 1.4;
+                margin-top: 10px;
+                line-height: 25px;
+                border-top: 1px solid $seperator ;
+                padding-top: $szfont10 ;
+                font-weight: 200;
 
                 .disable & {
                     filter: grayscale(1);
@@ -193,29 +166,31 @@ body {
             width: 20%;
             object-fit: contain;
             cursor: pointer;
+            pointer-events: auto;
             transition: 0.3s;
             opacity: 0.8;
             z-index: 5;
+
             @media only screen and (min-width: 640px) {
-            &:hover {
-
-                opacity: 1;
-                scale: 1.5;
+                &:hover {
+                    cursor: pointer;
+                    pointer-events: auto;
+                    opacity: 1;
+                    scale: $zoom-hover;
+                }
             }
-        }
-            .disable & {
 
+
+
+            &.disable {
                 filter: grayscale(1);
-
-
             }
-
         }
 
         .widget-header {
             text-transform: capitalize;
-            font-size: 21px;
-            font-weight: 400;
+            font-size: $szfont20;
+            font-weight: $font400;
             font-family: 'Urbanist', sans-serif;
             width: 100%;
             display: flex;
@@ -224,7 +199,7 @@ body {
             align-content: center;
             flex-direction: row;
             justify-content: space-between;
-            margin-top: 4%;
+            margin-top: 1%;
             letter-spacing: 0px;
 
             .disable & {
@@ -233,7 +208,13 @@ body {
             }
 
             .price-list {
-                font-weight: 500;
+                font-weight: $font500;
+
+                .kilos {
+                    font-size: $szfont15;
+                    color: $kilosgrey;
+                    font-weight: $font500 /2.5;
+                }
             }
         }
 
@@ -245,5 +226,128 @@ body {
             }
         }
 
+    }
+}
+
+.logo {
+
+    cursor: pointer;
+    pointer-events: auto;
+
+    &:hover {
+        cursor: pointer;
+        pointer-events: auto;
+    }
+}
+
+.disable {
+
+    &.widget-body-tetxt {
+        text-decoration: line-through;
+    }
+
+    &.spantitle {
+        text-decoration: line-through;
+    }
+
+    & .price-list {
+        text-decoration: line-through !important;
+    }
+
+    & .widget-body-parent {
+        color: $disable-bg-color
+    }
+
+    @media only screen and (min-width: 640px) {
+        &:hover {
+            scale: $zoom-hover/$zoom-hover !important;
+        }
+    }
+
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title .disable:nth-child(1) {
+    order: 2;
+}
+
+.title .disable:nth-child(2) {
+    order: 3;
+}
+
+.text2 {
+    font-size: 20px;
+}
+
+.contanct-us {
+    pointer-events: all;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contanct-us-parent{
+    text-align: center;
+}
+.variety {
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 24px;
+}
+
+.spantitle {
+    line-height: 28px;
+}
+
+.footeraki {
+    width: 100%;
+    position: absolute;
+    display: contents;
+}
+
+.taxes {
+    margin: 5px;
+    font-size: 20px;
+    position: relative;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .nonos {
+        .widget-container {
+            .widget-body-parent {
+                .title {
+                    font-size: $szfont17;
+                    display: flex;
+                    flex-direction: column;
+
+                    .avalableMessage {
+                        font-size: $szfont10;
+                    }
+                }
+
+                .price-list {
+                    font-size: $szfont17;
+                }
+
+                .widget-body-text {
+                    margin-top: 8px !important;
+                    font-size: $szfont15 - 1;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .widget-container {
+        height: 200px !important;
     }
 }
