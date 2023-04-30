@@ -295,10 +295,12 @@ body {
     /* line 341, style.scss */
     .nonos .widget-container .widget-body-parent .widget-body-text {
       letter-spacing: normal;
-      font-size: 12px; } }
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 20px; } }
 
 @media only screen and (max-width: 380px) {
-  /* line 356, style.scss */
+  /* line 358, style.scss */
   .widget-container {
     height: 200px !important; } }
 
