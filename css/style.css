@@ -134,7 +134,7 @@ body {
         line-height: 25px;
         border-top: 1px solid #ececec;
         padding-top: 10px;
-        font-weight: 100; }
+        font-weight: 200; }
         /* line 149, style.scss */
         .disable .nonos .widget-container .widget-body-parent .widget-body-text {
           filter: grayscale(1); }
@@ -190,7 +190,7 @@ body {
         .nonos .widget-container .widget-header .price-list .kilos {
           font-size: 15px;
           color: #8f8f8f;
-          font-weight: 166.6666666667; }
+          font-weight: 200; }
     /* line 221, style.scss */
     .nonos .widget-container .widget-body {
       width: 100%; }
@@ -254,7 +254,7 @@ body {
 /* line 296, style.scss */
 .variety {
   font-size: 13px;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 24px; }
 
 /* line 302, style.scss */
