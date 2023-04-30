@@ -137,7 +137,7 @@ body {
             }
 
             .widget-body-text {
-                font-family: 'Urbanist', sans-serif;
+                font-family: $myfont;
                 font-size: $szfont15;
                 letter-spacing: 1px;
                 margin-top: 10px;
@@ -191,7 +191,7 @@ body {
             text-transform: capitalize;
             font-size: $szfont20;
             font-weight: $font400;
-            font-family: 'Urbanist', sans-serif;
+            font-family: $myfont;
             width: 100%;
             display: flex;
             align-items: center;
@@ -308,6 +308,11 @@ body {
     width: 100%;
     position: absolute;
     display: contents;
+}
+
+
+.footer{
+    font-family: $myfont;
 }
 
 .taxes {
