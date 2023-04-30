@@ -127,7 +127,7 @@ body {
         filter: grayscale(1); }
       /* line 139, style.scss */
       .nonos .widget-container .widget-body-parent .widget-body-text {
-        font-family: 'Urbanist', sans-serif;
+        font-family: "Urbanist", sans-serif;
         font-size: 15px;
         letter-spacing: 1px;
         margin-top: 10px;
@@ -170,7 +170,7 @@ body {
       text-transform: capitalize;
       font-size: 20px;
       font-weight: 400;
-      font-family: 'Urbanist', sans-serif;
+      font-family: "Urbanist", sans-serif;
       width: 100%;
       display: flex;
       align-items: center;
@@ -267,7 +267,11 @@ body {
   position: absolute;
   display: contents; }
 
-/* line 313, style.scss */
+/* line 314, style.scss */
+.footer {
+  font-family: "Urbanist", sans-serif; }
+
+/* line 318, style.scss */
 .taxes {
   margin: 5px;
   font-size: 20px;
@@ -276,23 +280,23 @@ body {
   margin-bottom: 15px; }
 
 @media only screen and (max-width: 600px) {
-  /* line 327, style.scss */
+  /* line 332, style.scss */
   .nonos .widget-container .widget-body-parent .title {
     font-size: 17px;
     display: flex;
     flex-direction: column; }
-    /* line 332, style.scss */
+    /* line 337, style.scss */
     .nonos .widget-container .widget-body-parent .title .avalableMessage {
       font-size: 10px; }
-  /* line 337, style.scss */
+  /* line 342, style.scss */
   .nonos .widget-container .widget-body-parent .price-list {
     font-size: 17px; }
-  /* line 341, style.scss */
+  /* line 346, style.scss */
   .nonos .widget-container .widget-body-parent .widget-body-text {
     margin-top: 8px !important;
     font-size: 13px; } }
   @media only screen and (max-width: 600px) and (max-width: 400px) {
-    /* line 341, style.scss */
+    /* line 346, style.scss */
     .nonos .widget-container .widget-body-parent .widget-body-text {
       letter-spacing: normal;
       font-size: 13px;
@@ -300,7 +304,7 @@ body {
       line-height: 20px; } }
 
 @media only screen and (max-width: 380px) {
-  /* line 358, style.scss */
+  /* line 363, style.scss */
   .widget-container {
     height: 200px !important; } }
 
