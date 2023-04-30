@@ -1,31 +1,29 @@
 $(document).ready(function () {
-  var currentUrl = window.location.href;
-  var hasVParam = currentUrl.indexOf('?v=') !== -1;
-  var vParamSet = localStorage.getItem('vParamSet');
-  if (!hasVParam && !vParamSet) {
-    var updatedUrl = currentUrl + '?v=' + Math.floor(Math.random() * 1000000) + 1;
-    localStorage.setItem('vParamSet', true);
-    window.location.href = updatedUrl;
-  } else if (hasVParam && !vParamSet) {
-    var vParamValue = parseInt(currentUrl.substring(currentUrl.indexOf('?v=') + 3));
-    if (!isNaN(vParamValue)) {
-      var newVParamValue = vParamValue + Math.floor(Math.random() * 1000000) + 1;
-      var updatedUrl = currentUrl.replace('?v=' + vParamValue, '?v=' + newVParamValue);
-      localStorage.setItem('vParamSet', true);
-      window.location.href = updatedUrl;
-    }
-  } else {
-    localStorage.removeItem('vParamSet');
-  }
 
-
-
+  //PARAMETERS FOR URL WHEN REFRESH - ANTI CACHING
+  //   var currentUrl = window.location.href;
+  //   var hasVParam = currentUrl.indexOf('?v=') !== -1;
+  //   var vParamSet = localStorage.getItem('vParamSet');
+  //   if (!hasVParam && !vParamSet) {
+  //     var updatedUrl = currentUrl + '?v=' + Math.floor(Math.random() * 1000000) + 1;
+  //     localStorage.setItem('vParamSet', true);
+  //     window.location.href = updatedUrl;
+  //   } else if (hasVParam && !vParamSet) {
+  //     var vParamValue = parseInt(currentUrl.substring(currentUrl.indexOf('?v=') + 3));
+  //     if (!isNaN(vParamValue)) {
+  //       var newVParamValue = vParamValue + Math.floor(Math.random() * 1000000) + 1;
+  //       var updatedUrl = currentUrl.replace('?v=' + vParamValue, '?v=' + newVParamValue);
+  //       localStorage.setItem('vParamSet', true);
+  //       window.location.href = updatedUrl;
+  //     }
+  //   } else {
+  //     localStorage.removeItem('vParamSet');
+  //   }
 
   $('.disable').children().off('mouseenter mouseleave');
   $('.disable .title').append("<span class='avalableMessage'> NOT AVAILABLE</span>");
 
-//THIS COMMENT AN EXEI TEXT DIAFORETIKOY MEGE8US ALLA OXI AKRAIA DIAFORA
-
+  //THIS COMMENT AN EXEI TEXT DIAFORETIKOY MEGE8US ALLA OXI AKRAIA DIAFORA
   // $(document).ready(function() {
   //   var maxHeight = 0;
   //   $('.widget-container').each(function() {
@@ -35,9 +33,6 @@ $(document).ready(function () {
   //   });
   //   $('.widget-container').height(maxHeight);
   // });
-
-
-
 });
 
 
@@ -91,7 +86,7 @@ $(".preview-img").on("click", function () {
 
 
 
-$(window).on('resize', function() {
+$(window).on('resize', function () {
   var bodyHeight = $('body').height();
   var bodyWidth = $('body').width();
   $('html').css('--body-height', bodyHeight + 'px');
