@@ -287,8 +287,12 @@ body {
 .contanct-us {
     pointer-events: all;
     cursor: pointer;
+    text-align: center;
 }
 
+.contanct-us-parent{
+    text-align: center;
+}
 .variety {
     font-size: 13px;
     font-weight: 100;

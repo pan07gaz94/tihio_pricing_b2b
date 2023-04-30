@@ -58,9 +58,8 @@
 	<div class="footer">
 		<div class="text1 taxes">*No taxes included</div>
 		<div class="text2">
-			<div class="footeraki">For further information for the orders please
-				<span class="contanct-us-parent">
-					<a class="contanct-us contanct-us-1" href="mailto:info@tihioherbs.gr"> Contact us </a>
+			<div class="footeraki">
+				<span class="contanct-us-parent">For further information for the orders please contact us: <a class="contanct-us contanct-us-1" href="mailto:info@tihioherbs.gr"> info@tihioherbs.gr </a>
 					<!-- <a class="contanct-us contanct-us-2" href="tel:+306947131388"> Call us </a> -->
 				</span>
 			</div>

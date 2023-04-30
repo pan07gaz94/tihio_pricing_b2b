@@ -244,25 +244,30 @@ body {
 /* line 287, style.scss */
 .contanct-us {
   pointer-events: all;
-  cursor: pointer; }
+  cursor: pointer;
+  text-align: center; }
 
-/* line 292, style.scss */
+/* line 293, style.scss */
+.contanct-us-parent {
+  text-align: center; }
+
+/* line 296, style.scss */
 .variety {
   font-size: 13px;
   font-weight: 100;
   line-height: 24px; }
 
-/* line 298, style.scss */
+/* line 302, style.scss */
 .spantitle {
   line-height: 28px; }
 
-/* line 302, style.scss */
+/* line 306, style.scss */
 .footeraki {
   width: 100%;
   position: absolute;
   display: contents; }
 
-/* line 308, style.scss */
+/* line 312, style.scss */
 .taxes {
   margin: 5px;
   font-size: 20px;
@@ -271,23 +276,23 @@ body {
   margin-bottom: 15px; }
 
 @media only screen and (max-width: 600px) {
-  /* line 322, style.scss */
+  /* line 326, style.scss */
   .nonos .widget-container .widget-body-parent .title {
     font-size: 17px;
     display: flex;
     flex-direction: column; }
-    /* line 327, style.scss */
+    /* line 331, style.scss */
     .nonos .widget-container .widget-body-parent .title .avalableMessage {
       font-size: 10px; }
-  /* line 332, style.scss */
+  /* line 336, style.scss */
   .nonos .widget-container .widget-body-parent .price-list {
     font-size: 17px; }
-  /* line 336, style.scss */
+  /* line 340, style.scss */
   .nonos .widget-container .widget-body-parent .widget-body-text {
     margin-top: 8px !important;
     font-size: 14px; } }
 @media only screen and (max-width: 380px) {
-  /* line 346, style.scss */
+  /* line 350, style.scss */
   .widget-container {
     height: 200px !important; } }
 
